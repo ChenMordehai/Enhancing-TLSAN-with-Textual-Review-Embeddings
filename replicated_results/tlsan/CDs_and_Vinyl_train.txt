@@ -1,0 +1,1780 @@
+Loading data..
+{
+    "Ls": 10,
+    "cateid_embedding_size": 32,
+    "cuda_visible_devices": "3",
+    "display_freq": 100,
+    "dropout": 0.0,
+    "eval_freq": 1000,
+    "from_scratch": true,
+    "h": false,
+    "help": false,
+    "helpfull": false,
+    "helpshort": false,
+    "hidden_units": 64,
+    "itemid_embedding_size": 32,
+    "learning_rate": 1.0,
+    "max_epochs": 20,
+    "max_gradient_norm": 5.0,
+    "model_dir": "/dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl",
+    "num_blocks": 1,
+    "num_heads": 8,
+    "optimizer": "sgd",
+    "per_process_gpu_memory_fraction": 0.0,
+    "regulation_rate": 5e-05,
+    "test_batch_size": 128,
+    "train_batch_size": 32,
+    "userid_embedding_size": 32,
+    "user_count": 24179,
+    "item_count": 27602,
+    "cate_count": 310
+}
+All global variables:
+	 <tf.Variable 'gamma_parameter:0' shape=() dtype=float32_ref> trainable
+	 <tf.Variable 'item_emb:0' shape=(27602, 32) dtype=float32_ref> trainable
+	 <tf.Variable 'item_b:0' shape=(27602,) dtype=float32_ref> trainable
+	 <tf.Variable 'user_emb:0' shape=(24179, 32) dtype=float32_ref> trainable
+	 <tf.Variable 'usert_emb:0' shape=(24179, 10) dtype=float32_ref> trainable
+	 <tf.Variable 'cate_emb:0' shape=(310, 32) dtype=float32_ref> trainable
+	 <tf.Variable 'all/long_term/num_blocks0_0/long_term_layer/feature_wise_attention1/bn_dense_map1/linear_map/W:0' shape=(8, 8) dtype=float32_ref> trainable
+	 <tf.Variable 'all/long_term/num_blocks0_0/long_term_layer/feature_wise_attention1/bn_dense_map1/linear_map/bias:0' shape=(8,) dtype=float32_ref> trainable
+	 <tf.Variable 'all/long_term/num_blocks0_0/long_term_layer/feature_wise_attention1/bn_dense_map2/linear_map/W:0' shape=(8, 8) dtype=float32_ref> trainable
+	 <tf.Variable 'all/long_term/num_blocks0_0/long_term_layer/feature_wise_attention1/bn_dense_map2/linear_map/bias:0' shape=(8,) dtype=float32_ref> trainable
+	 <tf.Variable 'all/long_term/num_blocks0_0/dense/kernel:0' shape=(64, 64) dtype=float32_ref> trainable
+	 <tf.Variable 'all/long_term/num_blocks0_0/dense/bias:0' shape=(64,) dtype=float32_ref> trainable
+	 <tf.Variable 'all/short_term/num_blocks1_0/short_term_layer/feature_wise_attention2/bn_dense_map1/linear_map/W:0' shape=(8, 8) dtype=float32_ref> trainable
+	 <tf.Variable 'all/short_term/num_blocks1_0/short_term_layer/feature_wise_attention2/bn_dense_map1/linear_map/bias:0' shape=(8,) dtype=float32_ref> trainable
+	 <tf.Variable 'all/short_term/num_blocks1_0/short_term_layer/feature_wise_attention2/bn_dense_map2/linear_map/W:0' shape=(8, 8) dtype=float32_ref> trainable
+	 <tf.Variable 'all/short_term/num_blocks1_0/short_term_layer/feature_wise_attention2/bn_dense_map2/linear_map/bias:0' shape=(8,) dtype=float32_ref> trainable
+	 <tf.Variable 'global_step:0' shape=() dtype=int32_ref>
+	 <tf.Variable 'global_epoch_step:0' shape=() dtype=int32_ref>
+Created new model parameters..
+Init finish.	Cost time: 9.73s
+Init AUC: 0.7988
+Init precision:
+@1 = 0.0260 @10 = 0.0080 @20 = 0.0052 @30 = 0.0040 @40 = 0.0033 @50 = 0.0028 
+Init recall:
+@1 = 0.0260 @10 = 0.0797 @20 = 0.1039 @30 = 0.1199 @40 = 0.1323 @50 = 0.1425 
+Training..	max_epochs: 20	epoch_size: 16556
+Epoch 0 Global_step 1000	Train_loss: 6.4048	Eval_auc: 0.7976	
+Precision:
+@1 = 0.0147 @10 = 0.0049 @20 = 0.0033 @30 = 0.0026 @40 = 0.0022 @50 = 0.0019 
+Recall:
+@1 = 0.0147 @10 = 0.0488 @20 = 0.0653 @30 = 0.0771 @40 = 0.0873 @50 = 0.0954 
+Epoch 0 Global_step 2000	Train_loss: 5.8301	Eval_auc: 0.8223	
+Precision:
+@1 = 0.0110 @10 = 0.0041 @20 = 0.0028 @30 = 0.0022 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0110 @10 = 0.0406 @20 = 0.0561 @30 = 0.0674 @40 = 0.0772 @50 = 0.0855 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-2000
+Epoch 0 Global_step 3000	Train_loss: 5.3235	Eval_auc: 0.8517	
+Precision:
+@1 = 0.0090 @10 = 0.0036 @20 = 0.0025 @30 = 0.0020 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0090 @10 = 0.0359 @20 = 0.0504 @30 = 0.0608 @40 = 0.0699 @50 = 0.0781 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-3000
+Epoch 0 Global_step 4000	Train_loss: 4.8697	Eval_auc: 0.8617	
+Precision:
+@1 = 0.0081 @10 = 0.0035 @20 = 0.0025 @30 = 0.0020 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0081 @10 = 0.0346 @20 = 0.0495 @30 = 0.0602 @40 = 0.0695 @50 = 0.0780 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-4000
+Epoch 0 Global_step 5000	Train_loss: 4.4582	Eval_auc: 0.8608	
+Precision:
+@1 = 0.0075 @10 = 0.0034 @20 = 0.0025 @30 = 0.0020 @40 = 0.0018 @50 = 0.0016 
+Recall:
+@1 = 0.0075 @10 = 0.0340 @20 = 0.0492 @30 = 0.0605 @40 = 0.0706 @50 = 0.0793 
+Epoch 0 Global_step 6000	Train_loss: 4.0838	Eval_auc: 0.8624	
+Precision:
+@1 = 0.0068 @10 = 0.0033 @20 = 0.0024 @30 = 0.0020 @40 = 0.0018 @50 = 0.0016 
+Recall:
+@1 = 0.0068 @10 = 0.0330 @20 = 0.0485 @30 = 0.0600 @40 = 0.0702 @50 = 0.0791 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-6000
+Epoch 0 Global_step 7000	Train_loss: 3.7448	Eval_auc: 0.8578	
+Precision:
+@1 = 0.0063 @10 = 0.0031 @20 = 0.0023 @30 = 0.0019 @40 = 0.0017 @50 = 0.0015 
+Recall:
+@1 = 0.0063 @10 = 0.0313 @20 = 0.0466 @30 = 0.0580 @40 = 0.0681 @50 = 0.0769 
+Epoch 0 Global_step 8000	Train_loss: 3.4392	Eval_auc: 0.8540	
+Precision:
+@1 = 0.0059 @10 = 0.0030 @20 = 0.0023 @30 = 0.0019 @40 = 0.0017 @50 = 0.0015 
+Recall:
+@1 = 0.0059 @10 = 0.0301 @20 = 0.0453 @30 = 0.0565 @40 = 0.0667 @50 = 0.0756 
+Epoch 0 Global_step 9000	Train_loss: 3.1617	Eval_auc: 0.8518	
+Precision:
+@1 = 0.0056 @10 = 0.0029 @20 = 0.0022 @30 = 0.0018 @40 = 0.0016 @50 = 0.0015 
+Recall:
+@1 = 0.0056 @10 = 0.0290 @20 = 0.0439 @30 = 0.0549 @40 = 0.0650 @50 = 0.0738 
+Epoch 0 Global_step 10000	Train_loss: 2.9148	Eval_auc: 0.8616	
+Precision:
+@1 = 0.0055 @10 = 0.0028 @20 = 0.0021 @30 = 0.0018 @40 = 0.0016 @50 = 0.0014 
+Recall:
+@1 = 0.0055 @10 = 0.0281 @20 = 0.0429 @30 = 0.0538 @40 = 0.0638 @50 = 0.0724 
+Epoch 0 Global_step 11000	Train_loss: 2.6894	Eval_auc: 0.8580	
+Precision:
+@1 = 0.0054 @10 = 0.0028 @20 = 0.0021 @30 = 0.0018 @40 = 0.0016 @50 = 0.0014 
+Recall:
+@1 = 0.0054 @10 = 0.0276 @20 = 0.0423 @30 = 0.0531 @40 = 0.0630 @50 = 0.0716 
+Epoch 0 Global_step 12000	Train_loss: 2.4904	Eval_auc: 0.8641	
+Precision:
+@1 = 0.0052 @10 = 0.0027 @20 = 0.0021 @30 = 0.0017 @40 = 0.0016 @50 = 0.0014 
+Recall:
+@1 = 0.0052 @10 = 0.0270 @20 = 0.0416 @30 = 0.0524 @40 = 0.0622 @50 = 0.0708 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-12000
+Epoch 0 Global_step 13000	Train_loss: 2.3025	Eval_auc: 0.8631	
+Precision:
+@1 = 0.0051 @10 = 0.0026 @20 = 0.0020 @30 = 0.0017 @40 = 0.0015 @50 = 0.0014 
+Recall:
+@1 = 0.0051 @10 = 0.0264 @20 = 0.0408 @30 = 0.0516 @40 = 0.0613 @50 = 0.0698 
+Epoch 0 Global_step 14000	Train_loss: 2.1403	Eval_auc: 0.8597	
+Precision:
+@1 = 0.0051 @10 = 0.0026 @20 = 0.0020 @30 = 0.0017 @40 = 0.0015 @50 = 0.0014 
+Recall:
+@1 = 0.0051 @10 = 0.0261 @20 = 0.0404 @30 = 0.0512 @40 = 0.0610 @50 = 0.0696 
+Epoch 0 Global_step 15000	Train_loss: 1.9861	Eval_auc: 0.8764	
+Precision:
+@1 = 0.0050 @10 = 0.0026 @20 = 0.0020 @30 = 0.0017 @40 = 0.0015 @50 = 0.0014 
+Recall:
+@1 = 0.0050 @10 = 0.0259 @20 = 0.0403 @30 = 0.0512 @40 = 0.0611 @50 = 0.0696 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-15000
+Epoch 0 Global_step 16000	Train_loss: 1.8500	Eval_auc: 0.8611	
+Precision:
+@1 = 0.0049 @10 = 0.0026 @20 = 0.0020 @30 = 0.0017 @40 = 0.0015 @50 = 0.0014 
+Recall:
+@1 = 0.0049 @10 = 0.0257 @20 = 0.0401 @30 = 0.0510 @40 = 0.0609 @50 = 0.0694 
+Epoch 0 DONE	Cost time: 313.47
+Epoch 1 Global_step 17000	Train_loss: 1.7113	Eval_auc: 0.8533	
+Precision:
+@1 = 0.0048 @10 = 0.0025 @20 = 0.0020 @30 = 0.0017 @40 = 0.0015 @50 = 0.0014 
+Recall:
+@1 = 0.0048 @10 = 0.0254 @20 = 0.0397 @30 = 0.0506 @40 = 0.0605 @50 = 0.0691 
+Epoch 1 Global_step 18000	Train_loss: 1.5912	Eval_auc: 0.8447	
+Precision:
+@1 = 0.0047 @10 = 0.0025 @20 = 0.0020 @30 = 0.0017 @40 = 0.0015 @50 = 0.0014 
+Recall:
+@1 = 0.0047 @10 = 0.0253 @20 = 0.0397 @30 = 0.0507 @40 = 0.0605 @50 = 0.0692 
+Epoch 1 Global_step 19000	Train_loss: 1.4937	Eval_auc: 0.8823	
+Precision:
+@1 = 0.0047 @10 = 0.0025 @20 = 0.0020 @30 = 0.0017 @40 = 0.0015 @50 = 0.0014 
+Recall:
+@1 = 0.0047 @10 = 0.0254 @20 = 0.0398 @30 = 0.0509 @40 = 0.0609 @50 = 0.0696 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-19000
+Epoch 1 Global_step 20000	Train_loss: 1.4074	Eval_auc: 0.8776	
+Precision:
+@1 = 0.0046 @10 = 0.0025 @20 = 0.0020 @30 = 0.0017 @40 = 0.0015 @50 = 0.0014 
+Recall:
+@1 = 0.0046 @10 = 0.0254 @20 = 0.0398 @30 = 0.0510 @40 = 0.0609 @50 = 0.0697 
+Epoch 1 Global_step 21000	Train_loss: 1.3275	Eval_auc: 0.8825	
+Precision:
+@1 = 0.0046 @10 = 0.0025 @20 = 0.0020 @30 = 0.0017 @40 = 0.0015 @50 = 0.0014 
+Recall:
+@1 = 0.0046 @10 = 0.0254 @20 = 0.0398 @30 = 0.0510 @40 = 0.0610 @50 = 0.0698 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-21000
+Epoch 1 Global_step 22000	Train_loss: 1.2606	Eval_auc: 0.8695	
+Precision:
+@1 = 0.0046 @10 = 0.0025 @20 = 0.0020 @30 = 0.0017 @40 = 0.0015 @50 = 0.0014 
+Recall:
+@1 = 0.0046 @10 = 0.0253 @20 = 0.0398 @30 = 0.0511 @40 = 0.0611 @50 = 0.0699 
+Epoch 1 Global_step 23000	Train_loss: 1.1939	Eval_auc: 0.8766	
+Precision:
+@1 = 0.0046 @10 = 0.0025 @20 = 0.0020 @30 = 0.0017 @40 = 0.0015 @50 = 0.0014 
+Recall:
+@1 = 0.0046 @10 = 0.0253 @20 = 0.0398 @30 = 0.0511 @40 = 0.0611 @50 = 0.0700 
+Epoch 1 Global_step 24000	Train_loss: 1.1314	Eval_auc: 0.8790	
+Precision:
+@1 = 0.0045 @10 = 0.0025 @20 = 0.0020 @30 = 0.0017 @40 = 0.0015 @50 = 0.0014 
+Recall:
+@1 = 0.0045 @10 = 0.0252 @20 = 0.0397 @30 = 0.0510 @40 = 0.0612 @50 = 0.0701 
+Epoch 1 Global_step 25000	Train_loss: 1.0809	Eval_auc: 0.8782	
+Precision:
+@1 = 0.0045 @10 = 0.0025 @20 = 0.0020 @30 = 0.0017 @40 = 0.0015 @50 = 0.0014 
+Recall:
+@1 = 0.0045 @10 = 0.0251 @20 = 0.0395 @30 = 0.0508 @40 = 0.0609 @50 = 0.0699 
+Epoch 1 Global_step 26000	Train_loss: 1.0286	Eval_auc: 0.8831	
+Precision:
+@1 = 0.0045 @10 = 0.0025 @20 = 0.0020 @30 = 0.0017 @40 = 0.0015 @50 = 0.0014 
+Recall:
+@1 = 0.0045 @10 = 0.0250 @20 = 0.0395 @30 = 0.0508 @40 = 0.0610 @50 = 0.0700 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-26000
+Epoch 1 Global_step 27000	Train_loss: 0.9865	Eval_auc: 0.8838	
+Precision:
+@1 = 0.0044 @10 = 0.0025 @20 = 0.0020 @30 = 0.0017 @40 = 0.0015 @50 = 0.0014 
+Recall:
+@1 = 0.0044 @10 = 0.0249 @20 = 0.0395 @30 = 0.0508 @40 = 0.0611 @50 = 0.0700 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-27000
+Epoch 1 Global_step 28000	Train_loss: 0.9408	Eval_auc: 0.8791	
+Precision:
+@1 = 0.0044 @10 = 0.0025 @20 = 0.0020 @30 = 0.0017 @40 = 0.0015 @50 = 0.0014 
+Recall:
+@1 = 0.0044 @10 = 0.0250 @20 = 0.0397 @30 = 0.0511 @40 = 0.0615 @50 = 0.0705 
+Epoch 1 Global_step 29000	Train_loss: 0.9094	Eval_auc: 0.8958	
+Precision:
+@1 = 0.0044 @10 = 0.0025 @20 = 0.0020 @30 = 0.0017 @40 = 0.0015 @50 = 0.0014 
+Recall:
+@1 = 0.0044 @10 = 0.0251 @20 = 0.0399 @30 = 0.0514 @40 = 0.0618 @50 = 0.0709 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-29000
+Epoch 1 Global_step 30000	Train_loss: 0.8739	Eval_auc: 0.8933	
+Precision:
+@1 = 0.0044 @10 = 0.0025 @20 = 0.0020 @30 = 0.0017 @40 = 0.0016 @50 = 0.0014 
+Recall:
+@1 = 0.0044 @10 = 0.0253 @20 = 0.0402 @30 = 0.0517 @40 = 0.0622 @50 = 0.0714 
+Epoch 1 Global_step 31000	Train_loss: 0.8393	Eval_auc: 0.9007	
+Precision:
+@1 = 0.0044 @10 = 0.0025 @20 = 0.0020 @30 = 0.0017 @40 = 0.0016 @50 = 0.0014 
+Recall:
+@1 = 0.0044 @10 = 0.0253 @20 = 0.0404 @30 = 0.0520 @40 = 0.0625 @50 = 0.0717 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-31000
+Epoch 1 Global_step 32000	Train_loss: 0.8159	Eval_auc: 0.8955	
+Precision:
+@1 = 0.0044 @10 = 0.0025 @20 = 0.0020 @30 = 0.0017 @40 = 0.0016 @50 = 0.0014 
+Recall:
+@1 = 0.0044 @10 = 0.0254 @20 = 0.0404 @30 = 0.0521 @40 = 0.0627 @50 = 0.0719 
+Epoch 1 Global_step 33000	Train_loss: 0.7932	Eval_auc: 0.9002	
+Precision:
+@1 = 0.0044 @10 = 0.0026 @20 = 0.0020 @30 = 0.0017 @40 = 0.0016 @50 = 0.0014 
+Recall:
+@1 = 0.0044 @10 = 0.0255 @20 = 0.0407 @30 = 0.0524 @40 = 0.0631 @50 = 0.0723 
+Epoch 1 DONE	Cost time: 635.87
+Epoch 2 Global_step 34000	Train_loss: 0.7171	Eval_auc: 0.8872	
+Precision:
+@1 = 0.0044 @10 = 0.0025 @20 = 0.0020 @30 = 0.0017 @40 = 0.0016 @50 = 0.0014 
+Recall:
+@1 = 0.0044 @10 = 0.0255 @20 = 0.0407 @30 = 0.0525 @40 = 0.0632 @50 = 0.0724 
+Epoch 2 Global_step 35000	Train_loss: 0.7091	Eval_auc: 0.8872	
+Precision:
+@1 = 0.0044 @10 = 0.0025 @20 = 0.0020 @30 = 0.0017 @40 = 0.0016 @50 = 0.0015 
+Recall:
+@1 = 0.0044 @10 = 0.0255 @20 = 0.0406 @30 = 0.0525 @40 = 0.0632 @50 = 0.0725 
+Epoch 2 Global_step 36000	Train_loss: 0.7092	Eval_auc: 0.8964	
+Precision:
+@1 = 0.0043 @10 = 0.0026 @20 = 0.0020 @30 = 0.0018 @40 = 0.0016 @50 = 0.0015 
+Recall:
+@1 = 0.0043 @10 = 0.0255 @20 = 0.0408 @30 = 0.0527 @40 = 0.0635 @50 = 0.0729 
+Epoch 2 Global_step 37000	Train_loss: 0.6982	Eval_auc: 0.8943	
+Precision:
+@1 = 0.0043 @10 = 0.0025 @20 = 0.0020 @30 = 0.0018 @40 = 0.0016 @50 = 0.0015 
+Recall:
+@1 = 0.0043 @10 = 0.0255 @20 = 0.0408 @30 = 0.0527 @40 = 0.0635 @50 = 0.0729 
+Epoch 2 Global_step 38000	Train_loss: 0.6852	Eval_auc: 0.8967	
+Precision:
+@1 = 0.0042 @10 = 0.0025 @20 = 0.0020 @30 = 0.0018 @40 = 0.0016 @50 = 0.0015 
+Recall:
+@1 = 0.0042 @10 = 0.0255 @20 = 0.0408 @30 = 0.0528 @40 = 0.0637 @50 = 0.0732 
+Epoch 2 Global_step 39000	Train_loss: 0.6840	Eval_auc: 0.9029	
+Precision:
+@1 = 0.0042 @10 = 0.0026 @20 = 0.0020 @30 = 0.0018 @40 = 0.0016 @50 = 0.0015 
+Recall:
+@1 = 0.0042 @10 = 0.0255 @20 = 0.0409 @30 = 0.0530 @40 = 0.0639 @50 = 0.0735 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-39000
+Epoch 2 Global_step 40000	Train_loss: 0.6790	Eval_auc: 0.9018	
+Precision:
+@1 = 0.0042 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0016 @50 = 0.0015 
+Recall:
+@1 = 0.0042 @10 = 0.0256 @20 = 0.0411 @30 = 0.0532 @40 = 0.0641 @50 = 0.0738 
+Epoch 2 Global_step 41000	Train_loss: 0.6680	Eval_auc: 0.9021	
+Precision:
+@1 = 0.0042 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0016 @50 = 0.0015 
+Recall:
+@1 = 0.0042 @10 = 0.0257 @20 = 0.0413 @30 = 0.0535 @40 = 0.0645 @50 = 0.0742 
+Epoch 2 Global_step 42000	Train_loss: 0.6617	Eval_auc: 0.8877	
+Precision:
+@1 = 0.0042 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0016 @50 = 0.0015 
+Recall:
+@1 = 0.0042 @10 = 0.0257 @20 = 0.0413 @30 = 0.0535 @40 = 0.0646 @50 = 0.0744 
+Epoch 2 Global_step 43000	Train_loss: 0.6522	Eval_auc: 0.9038	
+Precision:
+@1 = 0.0041 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0016 @50 = 0.0015 
+Recall:
+@1 = 0.0041 @10 = 0.0258 @20 = 0.0415 @30 = 0.0537 @40 = 0.0649 @50 = 0.0747 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-43000
+Epoch 2 Global_step 44000	Train_loss: 0.6575	Eval_auc: 0.9029	
+Precision:
+@1 = 0.0041 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0016 @50 = 0.0015 
+Recall:
+@1 = 0.0041 @10 = 0.0258 @20 = 0.0415 @30 = 0.0538 @40 = 0.0649 @50 = 0.0748 
+Epoch 2 Global_step 45000	Train_loss: 0.6556	Eval_auc: 0.9045	
+Precision:
+@1 = 0.0041 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0016 @50 = 0.0015 
+Recall:
+@1 = 0.0041 @10 = 0.0259 @20 = 0.0416 @30 = 0.0540 @40 = 0.0652 @50 = 0.0751 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-45000
+Epoch 2 Global_step 46000	Train_loss: 0.6441	Eval_auc: 0.9073	
+Precision:
+@1 = 0.0041 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0016 @50 = 0.0015 
+Recall:
+@1 = 0.0041 @10 = 0.0259 @20 = 0.0417 @30 = 0.0541 @40 = 0.0654 @50 = 0.0753 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-46000
+Epoch 2 Global_step 47000	Train_loss: 0.6465	Eval_auc: 0.8992	
+Precision:
+@1 = 0.0041 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0016 @50 = 0.0015 
+Recall:
+@1 = 0.0041 @10 = 0.0259 @20 = 0.0417 @30 = 0.0542 @40 = 0.0655 @50 = 0.0754 
+Epoch 2 Global_step 48000	Train_loss: 0.6497	Eval_auc: 0.9072	
+Precision:
+@1 = 0.0040 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0016 @50 = 0.0015 
+Recall:
+@1 = 0.0040 @10 = 0.0259 @20 = 0.0418 @30 = 0.0543 @40 = 0.0657 @50 = 0.0756 
+Epoch 2 Global_step 49000	Train_loss: 0.6441	Eval_auc: 0.9126	
+Precision:
+@1 = 0.0040 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0016 @50 = 0.0015 
+Recall:
+@1 = 0.0040 @10 = 0.0260 @20 = 0.0419 @30 = 0.0545 @40 = 0.0659 @50 = 0.0760 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-49000
+Epoch 2 DONE	Cost time: 951.58
+Epoch 3 Global_step 50000	Train_loss: 0.6277	Eval_auc: 0.9041	
+Precision:
+@1 = 0.0039 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0016 @50 = 0.0015 
+Recall:
+@1 = 0.0039 @10 = 0.0259 @20 = 0.0419 @30 = 0.0545 @40 = 0.0659 @50 = 0.0760 
+Epoch 3 Global_step 51000	Train_loss: 0.5941	Eval_auc: 0.9013	
+Precision:
+@1 = 0.0039 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0016 @50 = 0.0015 
+Recall:
+@1 = 0.0039 @10 = 0.0258 @20 = 0.0419 @30 = 0.0545 @40 = 0.0660 @50 = 0.0761 
+Epoch 3 Global_step 52000	Train_loss: 0.6228	Eval_auc: 0.8907	
+Precision:
+@1 = 0.0038 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0017 @50 = 0.0015 
+Recall:
+@1 = 0.0038 @10 = 0.0257 @20 = 0.0419 @30 = 0.0546 @40 = 0.0660 @50 = 0.0762 
+Epoch 3 Global_step 53000	Train_loss: 0.6771	Eval_auc: 0.8962	
+Precision:
+@1 = 0.0038 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0017 @50 = 0.0015 
+Recall:
+@1 = 0.0038 @10 = 0.0257 @20 = 0.0420 @30 = 0.0547 @40 = 0.0663 @50 = 0.0764 
+Epoch 3 Global_step 54000	Train_loss: 0.6883	Eval_auc: 0.8878	
+Precision:
+@1 = 0.0038 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0017 @50 = 0.0015 
+Recall:
+@1 = 0.0038 @10 = 0.0257 @20 = 0.0420 @30 = 0.0548 @40 = 0.0664 @50 = 0.0765 
+Epoch 3 Global_step 55000	Train_loss: 0.6877	Eval_auc: 0.8958	
+Precision:
+@1 = 0.0037 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0017 @50 = 0.0015 
+Recall:
+@1 = 0.0037 @10 = 0.0257 @20 = 0.0420 @30 = 0.0549 @40 = 0.0665 @50 = 0.0767 
+Epoch 3 Global_step 56000	Train_loss: 0.6808	Eval_auc: 0.8821	
+Precision:
+@1 = 0.0037 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0017 @50 = 0.0015 
+Recall:
+@1 = 0.0037 @10 = 0.0255 @20 = 0.0419 @30 = 0.0548 @40 = 0.0664 @50 = 0.0766 
+Epoch 3 Global_step 57000	Train_loss: 0.6954	Eval_auc: 0.8998	
+Precision:
+@1 = 0.0037 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0017 @50 = 0.0015 
+Recall:
+@1 = 0.0037 @10 = 0.0255 @20 = 0.0421 @30 = 0.0550 @40 = 0.0667 @50 = 0.0770 
+Epoch 3 Global_step 58000	Train_loss: 0.7200	Eval_auc: 0.8937	
+Precision:
+@1 = 0.0036 @10 = 0.0025 @20 = 0.0021 @30 = 0.0018 @40 = 0.0017 @50 = 0.0015 
+Recall:
+@1 = 0.0036 @10 = 0.0255 @20 = 0.0421 @30 = 0.0551 @40 = 0.0668 @50 = 0.0771 
+Epoch 3 Global_step 59000	Train_loss: 0.7322	Eval_auc: 0.8978	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0021 @30 = 0.0018 @40 = 0.0017 @50 = 0.0015 
+Recall:
+@1 = 0.0036 @10 = 0.0255 @20 = 0.0422 @30 = 0.0552 @40 = 0.0670 @50 = 0.0774 
+Epoch 3 Global_step 60000	Train_loss: 0.7170	Eval_auc: 0.8978	
+Precision:
+@1 = 0.0036 @10 = 0.0025 @20 = 0.0021 @30 = 0.0018 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0255 @20 = 0.0422 @30 = 0.0553 @40 = 0.0671 @50 = 0.0775 
+Epoch 3 Global_step 61000	Train_loss: 0.7402	Eval_auc: 0.8940	
+Precision:
+@1 = 0.0036 @10 = 0.0025 @20 = 0.0021 @30 = 0.0018 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0255 @20 = 0.0423 @30 = 0.0554 @40 = 0.0673 @50 = 0.0778 
+Epoch 3 Global_step 62000	Train_loss: 0.7270	Eval_auc: 0.8979	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0021 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0255 @20 = 0.0424 @30 = 0.0556 @40 = 0.0675 @50 = 0.0780 
+Epoch 3 Global_step 63000	Train_loss: 0.7171	Eval_auc: 0.9134	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0021 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0255 @20 = 0.0425 @30 = 0.0558 @40 = 0.0677 @50 = 0.0783 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-63000
+Epoch 3 Global_step 64000	Train_loss: 0.7158	Eval_auc: 0.8883	
+Precision:
+@1 = 0.0036 @10 = 0.0025 @20 = 0.0021 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0255 @20 = 0.0424 @30 = 0.0558 @40 = 0.0678 @50 = 0.0784 
+Epoch 3 Global_step 65000	Train_loss: 0.7106	Eval_auc: 0.8932	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0021 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0255 @20 = 0.0426 @30 = 0.0560 @40 = 0.0680 @50 = 0.0787 
+Epoch 3 Global_step 66000	Train_loss: 0.7372	Eval_auc: 0.9054	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0021 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0257 @20 = 0.0428 @30 = 0.0563 @40 = 0.0684 @50 = 0.0791 
+Epoch 3 DONE	Cost time: 1276.51
+Epoch 4 Global_step 67000	Train_loss: 0.6934	Eval_auc: 0.8708	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0021 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0255 @20 = 0.0426 @30 = 0.0561 @40 = 0.0682 @50 = 0.0789 
+Epoch 4 Global_step 68000	Train_loss: 0.7332	Eval_auc: 0.8660	
+Precision:
+@1 = 0.0036 @10 = 0.0025 @20 = 0.0021 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0254 @20 = 0.0425 @30 = 0.0559 @40 = 0.0681 @50 = 0.0788 
+Epoch 4 Global_step 69000	Train_loss: 0.7515	Eval_auc: 0.8959	
+Precision:
+@1 = 0.0036 @10 = 0.0025 @20 = 0.0021 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0255 @20 = 0.0425 @30 = 0.0560 @40 = 0.0682 @50 = 0.0790 
+Epoch 4 Global_step 70000	Train_loss: 0.7453	Eval_auc: 0.8991	
+Precision:
+@1 = 0.0036 @10 = 0.0025 @20 = 0.0021 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0254 @20 = 0.0425 @30 = 0.0561 @40 = 0.0683 @50 = 0.0791 
+Epoch 4 Global_step 71000	Train_loss: 0.7415	Eval_auc: 0.9004	
+Precision:
+@1 = 0.0036 @10 = 0.0025 @20 = 0.0021 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0255 @20 = 0.0426 @30 = 0.0563 @40 = 0.0685 @50 = 0.0793 
+Epoch 4 Global_step 72000	Train_loss: 0.7408	Eval_auc: 0.8858	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0021 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0255 @20 = 0.0427 @30 = 0.0564 @40 = 0.0686 @50 = 0.0794 
+Epoch 4 Global_step 73000	Train_loss: 0.7421	Eval_auc: 0.9024	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0021 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0256 @20 = 0.0428 @30 = 0.0565 @40 = 0.0688 @50 = 0.0797 
+Epoch 4 Global_step 74000	Train_loss: 0.7522	Eval_auc: 0.8862	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0021 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0256 @20 = 0.0430 @30 = 0.0568 @40 = 0.0691 @50 = 0.0800 
+Epoch 4 Global_step 75000	Train_loss: 0.7520	Eval_auc: 0.8615	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0021 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0256 @20 = 0.0429 @30 = 0.0566 @40 = 0.0689 @50 = 0.0798 
+Epoch 4 Global_step 76000	Train_loss: 0.7460	Eval_auc: 0.8915	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0021 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0256 @20 = 0.0429 @30 = 0.0567 @40 = 0.0690 @50 = 0.0799 
+Epoch 4 Global_step 77000	Train_loss: 0.7366	Eval_auc: 0.9009	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0021 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0256 @20 = 0.0429 @30 = 0.0568 @40 = 0.0691 @50 = 0.0800 
+Epoch 4 Global_step 78000	Train_loss: 0.7382	Eval_auc: 0.9042	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0256 @20 = 0.0430 @30 = 0.0569 @40 = 0.0692 @50 = 0.0802 
+Epoch 4 Global_step 79000	Train_loss: 0.7315	Eval_auc: 0.8954	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0256 @20 = 0.0431 @30 = 0.0570 @40 = 0.0693 @50 = 0.0803 
+Epoch 4 Global_step 80000	Train_loss: 0.7407	Eval_auc: 0.8940	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0256 @20 = 0.0431 @30 = 0.0571 @40 = 0.0694 @50 = 0.0804 
+Epoch 4 Global_step 81000	Train_loss: 0.7240	Eval_auc: 0.8953	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0256 @20 = 0.0431 @30 = 0.0570 @40 = 0.0694 @50 = 0.0804 
+Epoch 4 Global_step 82000	Train_loss: 0.7194	Eval_auc: 0.9048	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0257 @20 = 0.0433 @30 = 0.0573 @40 = 0.0696 @50 = 0.0806 
+Epoch 4 DONE	Cost time: 1593.01
+Epoch 5 Global_step 83000	Train_loss: 0.7146	Eval_auc: 0.8961	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0257 @20 = 0.0433 @30 = 0.0572 @40 = 0.0696 @50 = 0.0806 
+Epoch 5 Global_step 84000	Train_loss: 0.6715	Eval_auc: 0.8925	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0256 @20 = 0.0432 @30 = 0.0572 @40 = 0.0696 @50 = 0.0806 
+Epoch 5 Global_step 85000	Train_loss: 0.6926	Eval_auc: 0.8766	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0256 @20 = 0.0432 @30 = 0.0572 @40 = 0.0695 @50 = 0.0806 
+Epoch 5 Global_step 86000	Train_loss: 0.6989	Eval_auc: 0.8933	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0256 @20 = 0.0432 @30 = 0.0572 @40 = 0.0696 @50 = 0.0806 
+Epoch 5 Global_step 87000	Train_loss: 0.7171	Eval_auc: 0.8987	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0256 @20 = 0.0433 @30 = 0.0573 @40 = 0.0697 @50 = 0.0807 
+Epoch 5 Global_step 88000	Train_loss: 0.7151	Eval_auc: 0.8981	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0257 @20 = 0.0433 @30 = 0.0574 @40 = 0.0698 @50 = 0.0808 
+Epoch 5 Global_step 89000	Train_loss: 0.7219	Eval_auc: 0.8979	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0258 @20 = 0.0435 @30 = 0.0576 @40 = 0.0700 @50 = 0.0811 
+Epoch 5 Global_step 90000	Train_loss: 0.7201	Eval_auc: 0.8964	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0017 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0258 @20 = 0.0434 @30 = 0.0575 @40 = 0.0700 @50 = 0.0811 
+Epoch 5 Global_step 91000	Train_loss: 0.7304	Eval_auc: 0.8968	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0018 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0258 @20 = 0.0435 @30 = 0.0576 @40 = 0.0701 @50 = 0.0812 
+Epoch 5 Global_step 92000	Train_loss: 0.7361	Eval_auc: 0.9062	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0018 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0258 @20 = 0.0435 @30 = 0.0577 @40 = 0.0702 @50 = 0.0813 
+Epoch 5 Global_step 93000	Train_loss: 0.7367	Eval_auc: 0.8928	
+Precision:
+@1 = 0.0036 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0018 @50 = 0.0016 
+Recall:
+@1 = 0.0036 @10 = 0.0258 @20 = 0.0436 @30 = 0.0578 @40 = 0.0704 @50 = 0.0815 
+Epoch 5 Global_step 94000	Train_loss: 0.7376	Eval_auc: 0.8962	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0018 @50 = 0.0016 
+Recall:
+@1 = 0.0035 @10 = 0.0259 @20 = 0.0437 @30 = 0.0580 @40 = 0.0705 @50 = 0.0817 
+Epoch 5 Global_step 95000	Train_loss: 0.7199	Eval_auc: 0.8832	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0018 @50 = 0.0016 
+Recall:
+@1 = 0.0035 @10 = 0.0259 @20 = 0.0438 @30 = 0.0581 @40 = 0.0706 @50 = 0.0818 
+Epoch 5 Global_step 96000	Train_loss: 0.7255	Eval_auc: 0.8999	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0018 @50 = 0.0016 
+Recall:
+@1 = 0.0035 @10 = 0.0260 @20 = 0.0440 @30 = 0.0583 @40 = 0.0709 @50 = 0.0821 
+Epoch 5 Global_step 97000	Train_loss: 0.7254	Eval_auc: 0.8902	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0019 @40 = 0.0018 @50 = 0.0016 
+Recall:
+@1 = 0.0035 @10 = 0.0261 @20 = 0.0440 @30 = 0.0584 @40 = 0.0710 @50 = 0.0822 
+Epoch 5 Global_step 98000	Train_loss: 0.7143	Eval_auc: 0.9040	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0020 @40 = 0.0018 @50 = 0.0016 
+Recall:
+@1 = 0.0035 @10 = 0.0261 @20 = 0.0441 @30 = 0.0585 @40 = 0.0711 @50 = 0.0824 
+Epoch 5 Global_step 99000	Train_loss: 0.7095	Eval_auc: 0.9000	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0262 @20 = 0.0442 @30 = 0.0586 @40 = 0.0713 @50 = 0.0825 
+Epoch 5 DONE	Cost time: 1913.32
+Epoch 6 Global_step 100000	Train_loss: 0.6653	Eval_auc: 0.8923	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0261 @20 = 0.0442 @30 = 0.0586 @40 = 0.0713 @50 = 0.0825 
+Epoch 6 Global_step 101000	Train_loss: 0.6797	Eval_auc: 0.8957	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0261 @20 = 0.0442 @30 = 0.0586 @40 = 0.0713 @50 = 0.0825 
+Epoch 6 Global_step 102000	Train_loss: 0.7046	Eval_auc: 0.8843	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0261 @20 = 0.0442 @30 = 0.0586 @40 = 0.0713 @50 = 0.0825 
+Epoch 6 Global_step 103000	Train_loss: 0.7208	Eval_auc: 0.8881	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0261 @20 = 0.0442 @30 = 0.0586 @40 = 0.0713 @50 = 0.0826 
+Epoch 6 Global_step 104000	Train_loss: 0.7325	Eval_auc: 0.8990	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0261 @20 = 0.0442 @30 = 0.0587 @40 = 0.0714 @50 = 0.0827 
+Epoch 6 Global_step 105000	Train_loss: 0.7358	Eval_auc: 0.8990	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0261 @20 = 0.0443 @30 = 0.0588 @40 = 0.0715 @50 = 0.0828 
+Epoch 6 Global_step 106000	Train_loss: 0.7569	Eval_auc: 0.9072	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0262 @20 = 0.0445 @30 = 0.0590 @40 = 0.0717 @50 = 0.0830 
+Epoch 6 Global_step 107000	Train_loss: 0.7540	Eval_auc: 0.9103	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0263 @20 = 0.0446 @30 = 0.0591 @40 = 0.0719 @50 = 0.0833 
+Epoch 6 Global_step 108000	Train_loss: 0.7518	Eval_auc: 0.9025	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0264 @20 = 0.0447 @30 = 0.0592 @40 = 0.0720 @50 = 0.0834 
+Epoch 6 Global_step 109000	Train_loss: 0.7493	Eval_auc: 0.9078	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0264 @20 = 0.0447 @30 = 0.0593 @40 = 0.0721 @50 = 0.0835 
+Epoch 6 Global_step 110000	Train_loss: 0.7419	Eval_auc: 0.9101	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0265 @20 = 0.0448 @30 = 0.0595 @40 = 0.0723 @50 = 0.0837 
+Epoch 6 Global_step 111000	Train_loss: 0.7450	Eval_auc: 0.8866	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0265 @20 = 0.0448 @30 = 0.0595 @40 = 0.0723 @50 = 0.0837 
+Epoch 6 Global_step 112000	Train_loss: 0.7445	Eval_auc: 0.8985	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0265 @20 = 0.0449 @30 = 0.0596 @40 = 0.0724 @50 = 0.0838 
+Epoch 6 Global_step 113000	Train_loss: 0.7474	Eval_auc: 0.9084	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0265 @20 = 0.0449 @30 = 0.0596 @40 = 0.0725 @50 = 0.0839 
+Epoch 6 Global_step 114000	Train_loss: 0.7350	Eval_auc: 0.9042	
+Precision:
+@1 = 0.0035 @10 = 0.0026 @20 = 0.0022 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0265 @20 = 0.0449 @30 = 0.0596 @40 = 0.0725 @50 = 0.0839 
+Epoch 6 Global_step 115000	Train_loss: 0.7321	Eval_auc: 0.9089	
+Precision:
+@1 = 0.0035 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0266 @20 = 0.0451 @30 = 0.0598 @40 = 0.0726 @50 = 0.0841 
+Epoch 6 DONE	Cost time: 2219.19
+Epoch 7 Global_step 116000	Train_loss: 0.7255	Eval_auc: 0.9115	
+Precision:
+@1 = 0.0035 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0266 @20 = 0.0451 @30 = 0.0599 @40 = 0.0728 @50 = 0.0843 
+Epoch 7 Global_step 117000	Train_loss: 0.6835	Eval_auc: 0.8913	
+Precision:
+@1 = 0.0035 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0266 @20 = 0.0452 @30 = 0.0599 @40 = 0.0728 @50 = 0.0843 
+Epoch 7 Global_step 118000	Train_loss: 0.7346	Eval_auc: 0.8963	
+Precision:
+@1 = 0.0035 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0266 @20 = 0.0451 @30 = 0.0599 @40 = 0.0728 @50 = 0.0843 
+Epoch 7 Global_step 119000	Train_loss: 0.7432	Eval_auc: 0.8918	
+Precision:
+@1 = 0.0035 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0266 @20 = 0.0452 @30 = 0.0600 @40 = 0.0729 @50 = 0.0844 
+Epoch 7 Global_step 120000	Train_loss: 0.7519	Eval_auc: 0.8925	
+Precision:
+@1 = 0.0035 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0266 @20 = 0.0452 @30 = 0.0600 @40 = 0.0729 @50 = 0.0844 
+Epoch 7 Global_step 121000	Train_loss: 0.7638	Eval_auc: 0.8937	
+Precision:
+@1 = 0.0035 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0266 @20 = 0.0452 @30 = 0.0600 @40 = 0.0729 @50 = 0.0845 
+Epoch 7 Global_step 122000	Train_loss: 0.7594	Eval_auc: 0.8878	
+Precision:
+@1 = 0.0035 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0267 @20 = 0.0453 @30 = 0.0601 @40 = 0.0731 @50 = 0.0846 
+Epoch 7 Global_step 123000	Train_loss: 0.7628	Eval_auc: 0.9010	
+Precision:
+@1 = 0.0035 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0267 @20 = 0.0454 @30 = 0.0603 @40 = 0.0732 @50 = 0.0848 
+Epoch 7 Global_step 124000	Train_loss: 0.7862	Eval_auc: 0.8998	
+Precision:
+@1 = 0.0035 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0268 @20 = 0.0455 @30 = 0.0604 @40 = 0.0734 @50 = 0.0849 
+Epoch 7 Global_step 125000	Train_loss: 0.7687	Eval_auc: 0.9023	
+Precision:
+@1 = 0.0035 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0269 @20 = 0.0456 @30 = 0.0605 @40 = 0.0735 @50 = 0.0850 
+Epoch 7 Global_step 126000	Train_loss: 0.7665	Eval_auc: 0.8525	
+Precision:
+@1 = 0.0035 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0268 @20 = 0.0455 @30 = 0.0604 @40 = 0.0733 @50 = 0.0849 
+Epoch 7 Global_step 127000	Train_loss: 0.7713	Eval_auc: 0.8938	
+Precision:
+@1 = 0.0035 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0268 @20 = 0.0455 @30 = 0.0604 @40 = 0.0734 @50 = 0.0849 
+Epoch 7 Global_step 128000	Train_loss: 0.7583	Eval_auc: 0.9000	
+Precision:
+@1 = 0.0035 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0269 @20 = 0.0456 @30 = 0.0605 @40 = 0.0735 @50 = 0.0850 
+Epoch 7 Global_step 129000	Train_loss: 0.7472	Eval_auc: 0.9013	
+Precision:
+@1 = 0.0035 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0269 @20 = 0.0456 @30 = 0.0605 @40 = 0.0735 @50 = 0.0851 
+Epoch 7 Global_step 130000	Train_loss: 0.7371	Eval_auc: 0.9185	
+Precision:
+@1 = 0.0035 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0035 @10 = 0.0270 @20 = 0.0458 @30 = 0.0607 @40 = 0.0737 @50 = 0.0853 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-130000
+Epoch 7 Global_step 131000	Train_loss: 0.7447	Eval_auc: 0.9067	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0018 @50 = 0.0017 
+Recall:
+@1 = 0.0036 @10 = 0.0271 @20 = 0.0459 @30 = 0.0608 @40 = 0.0739 @50 = 0.0855 
+Epoch 7 Global_step 132000	Train_loss: 0.7326	Eval_auc: 0.9138	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0460 @30 = 0.0609 @40 = 0.0740 @50 = 0.0856 
+Epoch 7 DONE	Cost time: 2536.25
+Epoch 8 Global_step 133000	Train_loss: 0.6960	Eval_auc: 0.9074	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0461 @30 = 0.0610 @40 = 0.0741 @50 = 0.0857 
+Epoch 8 Global_step 134000	Train_loss: 0.6868	Eval_auc: 0.9050	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0036 @10 = 0.0273 @20 = 0.0461 @30 = 0.0611 @40 = 0.0742 @50 = 0.0858 
+Epoch 8 Global_step 135000	Train_loss: 0.7103	Eval_auc: 0.8985	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0036 @10 = 0.0273 @20 = 0.0462 @30 = 0.0611 @40 = 0.0742 @50 = 0.0859 
+Epoch 8 Global_step 136000	Train_loss: 0.7255	Eval_auc: 0.8993	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0036 @10 = 0.0274 @20 = 0.0462 @30 = 0.0612 @40 = 0.0743 @50 = 0.0860 
+Epoch 8 Global_step 137000	Train_loss: 0.7512	Eval_auc: 0.9028	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0036 @10 = 0.0274 @20 = 0.0463 @30 = 0.0613 @40 = 0.0744 @50 = 0.0861 
+Epoch 8 Global_step 138000	Train_loss: 0.7519	Eval_auc: 0.9078	
+Precision:
+@1 = 0.0036 @10 = 0.0028 @20 = 0.0023 @30 = 0.0020 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0036 @10 = 0.0275 @20 = 0.0464 @30 = 0.0615 @40 = 0.0746 @50 = 0.0863 
+Epoch 8 Global_step 139000	Train_loss: 0.7684	Eval_auc: 0.8315	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0036 @10 = 0.0275 @20 = 0.0464 @30 = 0.0614 @40 = 0.0745 @50 = 0.0862 
+Epoch 8 Global_step 140000	Train_loss: 0.7656	Eval_auc: 0.8992	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0020 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0036 @10 = 0.0275 @20 = 0.0464 @30 = 0.0614 @40 = 0.0746 @50 = 0.0863 
+Epoch 8 Global_step 141000	Train_loss: 0.7749	Eval_auc: 0.8951	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0465 @30 = 0.0615 @40 = 0.0746 @50 = 0.0863 
+Epoch 8 Global_step 142000	Train_loss: 0.7669	Eval_auc: 0.9111	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0465 @30 = 0.0616 @40 = 0.0747 @50 = 0.0864 
+Epoch 8 Global_step 143000	Train_loss: 0.7631	Eval_auc: 0.9046	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0466 @30 = 0.0616 @40 = 0.0748 @50 = 0.0865 
+Epoch 8 Global_step 144000	Train_loss: 0.7750	Eval_auc: 0.9069	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0037 @10 = 0.0277 @20 = 0.0467 @30 = 0.0618 @40 = 0.0750 @50 = 0.0867 
+Epoch 8 Global_step 145000	Train_loss: 0.7665	Eval_auc: 0.9116	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0037 @10 = 0.0278 @20 = 0.0468 @30 = 0.0619 @40 = 0.0751 @50 = 0.0869 
+Epoch 8 Global_step 146000	Train_loss: 0.7653	Eval_auc: 0.9036	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0037 @10 = 0.0278 @20 = 0.0469 @30 = 0.0620 @40 = 0.0752 @50 = 0.0870 
+Epoch 8 Global_step 147000	Train_loss: 0.7642	Eval_auc: 0.9093	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0037 @10 = 0.0279 @20 = 0.0469 @30 = 0.0621 @40 = 0.0753 @50 = 0.0871 
+Epoch 8 Global_step 148000	Train_loss: 0.7539	Eval_auc: 0.9139	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0037 @10 = 0.0279 @20 = 0.0470 @30 = 0.0622 @40 = 0.0754 @50 = 0.0872 
+Epoch 8 Global_step 149000	Train_loss: 0.7476	Eval_auc: 0.9109	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0038 @10 = 0.0280 @20 = 0.0471 @30 = 0.0623 @40 = 0.0756 @50 = 0.0874 
+Epoch 8 DONE	Cost time: 2853.30
+Epoch 9 Global_step 150000	Train_loss: 0.6888	Eval_auc: 0.9026	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0038 @10 = 0.0280 @20 = 0.0471 @30 = 0.0623 @40 = 0.0755 @50 = 0.0874 
+Epoch 9 Global_step 151000	Train_loss: 0.6902	Eval_auc: 0.9122	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0038 @10 = 0.0280 @20 = 0.0471 @30 = 0.0623 @40 = 0.0756 @50 = 0.0874 
+Epoch 9 Global_step 152000	Train_loss: 0.6832	Eval_auc: 0.9127	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0017 
+Recall:
+@1 = 0.0038 @10 = 0.0280 @20 = 0.0471 @30 = 0.0624 @40 = 0.0756 @50 = 0.0875 
+Epoch 9 Global_step 153000	Train_loss: 0.6741	Eval_auc: 0.9129	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0280 @20 = 0.0471 @30 = 0.0624 @40 = 0.0757 @50 = 0.0875 
+Epoch 9 Global_step 154000	Train_loss: 0.6640	Eval_auc: 0.9165	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0280 @20 = 0.0472 @30 = 0.0624 @40 = 0.0757 @50 = 0.0876 
+Epoch 9 Global_step 155000	Train_loss: 0.6671	Eval_auc: 0.9155	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0280 @20 = 0.0472 @30 = 0.0625 @40 = 0.0758 @50 = 0.0877 
+Epoch 9 Global_step 156000	Train_loss: 0.6613	Eval_auc: 0.9159	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0280 @20 = 0.0473 @30 = 0.0625 @40 = 0.0759 @50 = 0.0877 
+Epoch 9 Global_step 157000	Train_loss: 0.6595	Eval_auc: 0.9156	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0281 @20 = 0.0473 @30 = 0.0626 @40 = 0.0759 @50 = 0.0878 
+Epoch 9 Global_step 158000	Train_loss: 0.6609	Eval_auc: 0.9165	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0281 @20 = 0.0473 @30 = 0.0626 @40 = 0.0760 @50 = 0.0879 
+Epoch 9 Global_step 159000	Train_loss: 0.6544	Eval_auc: 0.9180	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0281 @20 = 0.0474 @30 = 0.0627 @40 = 0.0761 @50 = 0.0880 
+Epoch 9 Global_step 160000	Train_loss: 0.6558	Eval_auc: 0.9180	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0281 @20 = 0.0474 @30 = 0.0628 @40 = 0.0761 @50 = 0.0881 
+Epoch 9 Global_step 161000	Train_loss: 0.6476	Eval_auc: 0.9179	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0281 @20 = 0.0474 @30 = 0.0628 @40 = 0.0762 @50 = 0.0881 
+Epoch 9 Global_step 162000	Train_loss: 0.6450	Eval_auc: 0.9183	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0281 @20 = 0.0475 @30 = 0.0629 @40 = 0.0763 @50 = 0.0882 
+Epoch 9 Global_step 163000	Train_loss: 0.6484	Eval_auc: 0.9197	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0281 @20 = 0.0475 @30 = 0.0629 @40 = 0.0763 @50 = 0.0883 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-163000
+Epoch 9 Global_step 164000	Train_loss: 0.6532	Eval_auc: 0.9186	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0282 @20 = 0.0476 @30 = 0.0630 @40 = 0.0764 @50 = 0.0884 
+Epoch 9 Global_step 165000	Train_loss: 0.6489	Eval_auc: 0.9206	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0282 @20 = 0.0476 @30 = 0.0630 @40 = 0.0765 @50 = 0.0884 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-165000
+Epoch 9 DONE	Cost time: 3158.43
+Epoch 10 Global_step 166000	Train_loss: 0.6266	Eval_auc: 0.9213	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0282 @20 = 0.0476 @30 = 0.0631 @40 = 0.0765 @50 = 0.0885 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-166000
+Epoch 10 Global_step 167000	Train_loss: 0.5964	Eval_auc: 0.9179	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0282 @20 = 0.0476 @30 = 0.0631 @40 = 0.0766 @50 = 0.0885 
+Epoch 10 Global_step 168000	Train_loss: 0.5935	Eval_auc: 0.9166	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0282 @20 = 0.0476 @30 = 0.0631 @40 = 0.0766 @50 = 0.0886 
+Epoch 10 Global_step 169000	Train_loss: 0.5909	Eval_auc: 0.9202	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0282 @20 = 0.0476 @30 = 0.0632 @40 = 0.0766 @50 = 0.0886 
+Epoch 10 Global_step 170000	Train_loss: 0.5965	Eval_auc: 0.9191	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0282 @20 = 0.0476 @30 = 0.0632 @40 = 0.0767 @50 = 0.0887 
+Epoch 10 Global_step 171000	Train_loss: 0.5940	Eval_auc: 0.9179	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0282 @20 = 0.0477 @30 = 0.0632 @40 = 0.0767 @50 = 0.0887 
+Epoch 10 Global_step 172000	Train_loss: 0.5902	Eval_auc: 0.9184	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0282 @20 = 0.0477 @30 = 0.0632 @40 = 0.0767 @50 = 0.0887 
+Epoch 10 Global_step 173000	Train_loss: 0.5961	Eval_auc: 0.9196	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0282 @20 = 0.0477 @30 = 0.0633 @40 = 0.0768 @50 = 0.0888 
+Epoch 10 Global_step 174000	Train_loss: 0.5950	Eval_auc: 0.9220	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0281 @20 = 0.0477 @30 = 0.0633 @40 = 0.0768 @50 = 0.0888 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-174000
+Epoch 10 Global_step 175000	Train_loss: 0.5908	Eval_auc: 0.9213	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0281 @20 = 0.0477 @30 = 0.0633 @40 = 0.0768 @50 = 0.0888 
+Epoch 10 Global_step 176000	Train_loss: 0.5902	Eval_auc: 0.9204	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0281 @20 = 0.0477 @30 = 0.0633 @40 = 0.0768 @50 = 0.0889 
+Epoch 10 Global_step 177000	Train_loss: 0.5901	Eval_auc: 0.9217	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0281 @20 = 0.0477 @30 = 0.0633 @40 = 0.0769 @50 = 0.0889 
+Epoch 10 Global_step 178000	Train_loss: 0.5912	Eval_auc: 0.9234	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0281 @20 = 0.0477 @30 = 0.0634 @40 = 0.0769 @50 = 0.0890 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-178000
+Epoch 10 Global_step 179000	Train_loss: 0.5840	Eval_auc: 0.9237	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0281 @20 = 0.0477 @30 = 0.0634 @40 = 0.0770 @50 = 0.0890 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-179000
+Epoch 10 Global_step 180000	Train_loss: 0.5831	Eval_auc: 0.9234	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0281 @20 = 0.0478 @30 = 0.0634 @40 = 0.0770 @50 = 0.0890 
+Epoch 10 Global_step 181000	Train_loss: 0.5886	Eval_auc: 0.9234	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0281 @20 = 0.0478 @30 = 0.0634 @40 = 0.0770 @50 = 0.0891 
+Epoch 10 Global_step 182000	Train_loss: 0.5849	Eval_auc: 0.9235	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0281 @20 = 0.0478 @30 = 0.0634 @40 = 0.0770 @50 = 0.0891 
+Epoch 10 DONE	Cost time: 3485.82
+Epoch 11 Global_step 183000	Train_loss: 0.5537	Eval_auc: 0.9224	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0281 @20 = 0.0477 @30 = 0.0634 @40 = 0.0771 @50 = 0.0891 
+Epoch 11 Global_step 184000	Train_loss: 0.5433	Eval_auc: 0.9220	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0281 @20 = 0.0477 @30 = 0.0634 @40 = 0.0771 @50 = 0.0891 
+Epoch 11 Global_step 185000	Train_loss: 0.5441	Eval_auc: 0.9210	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0280 @20 = 0.0477 @30 = 0.0634 @40 = 0.0771 @50 = 0.0892 
+Epoch 11 Global_step 186000	Train_loss: 0.5479	Eval_auc: 0.9222	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0280 @20 = 0.0477 @30 = 0.0634 @40 = 0.0771 @50 = 0.0892 
+Epoch 11 Global_step 187000	Train_loss: 0.5445	Eval_auc: 0.9236	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0280 @20 = 0.0477 @30 = 0.0634 @40 = 0.0771 @50 = 0.0892 
+Epoch 11 Global_step 188000	Train_loss: 0.5450	Eval_auc: 0.9240	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0280 @20 = 0.0477 @30 = 0.0634 @40 = 0.0771 @50 = 0.0892 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-188000
+Epoch 11 Global_step 189000	Train_loss: 0.5508	Eval_auc: 0.9228	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0280 @20 = 0.0477 @30 = 0.0634 @40 = 0.0771 @50 = 0.0892 
+Epoch 11 Global_step 190000	Train_loss: 0.5435	Eval_auc: 0.9241	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0280 @20 = 0.0477 @30 = 0.0634 @40 = 0.0771 @50 = 0.0893 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-190000
+Epoch 11 Global_step 191000	Train_loss: 0.5412	Eval_auc: 0.9218	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0280 @20 = 0.0477 @30 = 0.0634 @40 = 0.0771 @50 = 0.0893 
+Epoch 11 Global_step 192000	Train_loss: 0.5483	Eval_auc: 0.9248	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0280 @20 = 0.0477 @30 = 0.0634 @40 = 0.0771 @50 = 0.0893 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-192000
+Epoch 11 Global_step 193000	Train_loss: 0.5493	Eval_auc: 0.9234	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0279 @20 = 0.0476 @30 = 0.0634 @40 = 0.0771 @50 = 0.0893 
+Epoch 11 Global_step 194000	Train_loss: 0.5480	Eval_auc: 0.9243	
+Precision:
+@1 = 0.0039 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0039 @10 = 0.0279 @20 = 0.0476 @30 = 0.0634 @40 = 0.0772 @50 = 0.0893 
+Epoch 11 Global_step 195000	Train_loss: 0.5460	Eval_auc: 0.9244	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0279 @20 = 0.0476 @30 = 0.0634 @40 = 0.0772 @50 = 0.0893 
+Epoch 11 Global_step 196000	Train_loss: 0.5502	Eval_auc: 0.9266	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0279 @20 = 0.0476 @30 = 0.0634 @40 = 0.0772 @50 = 0.0893 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-196000
+Epoch 11 Global_step 197000	Train_loss: 0.5457	Eval_auc: 0.9242	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0279 @20 = 0.0476 @30 = 0.0634 @40 = 0.0772 @50 = 0.0894 
+Epoch 11 Global_step 198000	Train_loss: 0.5457	Eval_auc: 0.9272	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0279 @20 = 0.0476 @30 = 0.0634 @40 = 0.0772 @50 = 0.0894 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-198000
+Epoch 11 DONE	Cost time: 3783.96
+Epoch 12 Global_step 199000	Train_loss: 0.5378	Eval_auc: 0.9239	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0279 @20 = 0.0476 @30 = 0.0634 @40 = 0.0772 @50 = 0.0894 
+Epoch 12 Global_step 200000	Train_loss: 0.5059	Eval_auc: 0.9238	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0279 @20 = 0.0476 @30 = 0.0634 @40 = 0.0772 @50 = 0.0894 
+Epoch 12 Global_step 201000	Train_loss: 0.5044	Eval_auc: 0.9241	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0279 @20 = 0.0476 @30 = 0.0634 @40 = 0.0772 @50 = 0.0894 
+Epoch 12 Global_step 202000	Train_loss: 0.5033	Eval_auc: 0.9244	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0278 @20 = 0.0475 @30 = 0.0634 @40 = 0.0772 @50 = 0.0894 
+Epoch 12 Global_step 203000	Train_loss: 0.5072	Eval_auc: 0.9237	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0278 @20 = 0.0475 @30 = 0.0634 @40 = 0.0772 @50 = 0.0894 
+Epoch 12 Global_step 204000	Train_loss: 0.5099	Eval_auc: 0.9251	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0278 @20 = 0.0475 @30 = 0.0634 @40 = 0.0772 @50 = 0.0894 
+Epoch 12 Global_step 205000	Train_loss: 0.5149	Eval_auc: 0.9240	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0278 @20 = 0.0475 @30 = 0.0634 @40 = 0.0772 @50 = 0.0894 
+Epoch 12 Global_step 206000	Train_loss: 0.5077	Eval_auc: 0.9232	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0278 @20 = 0.0475 @30 = 0.0634 @40 = 0.0772 @50 = 0.0894 
+Epoch 12 Global_step 207000	Train_loss: 0.5145	Eval_auc: 0.9262	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0278 @20 = 0.0475 @30 = 0.0633 @40 = 0.0772 @50 = 0.0894 
+Epoch 12 Global_step 208000	Train_loss: 0.5151	Eval_auc: 0.9265	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0278 @20 = 0.0475 @30 = 0.0633 @40 = 0.0772 @50 = 0.0894 
+Epoch 12 Global_step 209000	Train_loss: 0.5119	Eval_auc: 0.9264	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0278 @20 = 0.0474 @30 = 0.0633 @40 = 0.0771 @50 = 0.0894 
+Epoch 12 Global_step 210000	Train_loss: 0.5187	Eval_auc: 0.9251	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0278 @20 = 0.0474 @30 = 0.0633 @40 = 0.0771 @50 = 0.0894 
+Epoch 12 Global_step 211000	Train_loss: 0.5139	Eval_auc: 0.9275	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0278 @20 = 0.0474 @30 = 0.0633 @40 = 0.0771 @50 = 0.0894 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-211000
+Epoch 12 Global_step 212000	Train_loss: 0.5174	Eval_auc: 0.9259	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0277 @20 = 0.0474 @30 = 0.0633 @40 = 0.0771 @50 = 0.0894 
+Epoch 12 Global_step 213000	Train_loss: 0.5218	Eval_auc: 0.9261	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0277 @20 = 0.0474 @30 = 0.0633 @40 = 0.0771 @50 = 0.0894 
+Epoch 12 Global_step 214000	Train_loss: 0.5215	Eval_auc: 0.9258	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0277 @20 = 0.0474 @30 = 0.0633 @40 = 0.0771 @50 = 0.0894 
+Epoch 12 Global_step 215000	Train_loss: 0.5260	Eval_auc: 0.9286	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0277 @20 = 0.0474 @30 = 0.0633 @40 = 0.0771 @50 = 0.0894 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-215000
+Epoch 12 DONE	Cost time: 4079.16
+Epoch 13 Global_step 216000	Train_loss: 0.4826	Eval_auc: 0.9267	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0277 @20 = 0.0474 @30 = 0.0633 @40 = 0.0771 @50 = 0.0894 
+Epoch 13 Global_step 217000	Train_loss: 0.4752	Eval_auc: 0.9278	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0277 @20 = 0.0474 @30 = 0.0633 @40 = 0.0771 @50 = 0.0894 
+Epoch 13 Global_step 218000	Train_loss: 0.4759	Eval_auc: 0.9275	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0277 @20 = 0.0474 @30 = 0.0633 @40 = 0.0771 @50 = 0.0894 
+Epoch 13 Global_step 219000	Train_loss: 0.4757	Eval_auc: 0.9264	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0277 @20 = 0.0473 @30 = 0.0633 @40 = 0.0771 @50 = 0.0894 
+Epoch 13 Global_step 220000	Train_loss: 0.4814	Eval_auc: 0.9273	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0277 @20 = 0.0473 @30 = 0.0633 @40 = 0.0771 @50 = 0.0894 
+Epoch 13 Global_step 221000	Train_loss: 0.4828	Eval_auc: 0.9263	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0277 @20 = 0.0473 @30 = 0.0633 @40 = 0.0771 @50 = 0.0894 
+Epoch 13 Global_step 222000	Train_loss: 0.4813	Eval_auc: 0.9249	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0277 @20 = 0.0473 @30 = 0.0632 @40 = 0.0771 @50 = 0.0894 
+Epoch 13 Global_step 223000	Train_loss: 0.4867	Eval_auc: 0.9269	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0277 @20 = 0.0473 @30 = 0.0632 @40 = 0.0771 @50 = 0.0894 
+Epoch 13 Global_step 224000	Train_loss: 0.4864	Eval_auc: 0.9270	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0276 @20 = 0.0473 @30 = 0.0632 @40 = 0.0771 @50 = 0.0894 
+Epoch 13 Global_step 225000	Train_loss: 0.4883	Eval_auc: 0.9251	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0276 @20 = 0.0473 @30 = 0.0632 @40 = 0.0771 @50 = 0.0894 
+Epoch 13 Global_step 226000	Train_loss: 0.4926	Eval_auc: 0.9267	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0276 @20 = 0.0473 @30 = 0.0632 @40 = 0.0771 @50 = 0.0894 
+Epoch 13 Global_step 227000	Train_loss: 0.5008	Eval_auc: 0.9284	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0276 @20 = 0.0473 @30 = 0.0632 @40 = 0.0771 @50 = 0.0894 
+Epoch 13 Global_step 228000	Train_loss: 0.4976	Eval_auc: 0.9278	
+Precision:
+@1 = 0.0038 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0038 @10 = 0.0276 @20 = 0.0473 @30 = 0.0632 @40 = 0.0771 @50 = 0.0894 
+Epoch 13 Global_step 229000	Train_loss: 0.5021	Eval_auc: 0.9301	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0473 @30 = 0.0632 @40 = 0.0771 @50 = 0.0894 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-229000
+Epoch 13 Global_step 230000	Train_loss: 0.5027	Eval_auc: 0.9275	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0473 @30 = 0.0632 @40 = 0.0771 @50 = 0.0894 
+Epoch 13 Global_step 231000	Train_loss: 0.5017	Eval_auc: 0.9289	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0473 @30 = 0.0632 @40 = 0.0770 @50 = 0.0894 
+Epoch 13 DONE	Cost time: 4361.47
+Epoch 14 Global_step 232000	Train_loss: 0.4929	Eval_auc: 0.9294	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0473 @30 = 0.0632 @40 = 0.0770 @50 = 0.0893 
+Epoch 14 Global_step 233000	Train_loss: 0.4495	Eval_auc: 0.9284	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0472 @30 = 0.0632 @40 = 0.0770 @50 = 0.0893 
+Epoch 14 Global_step 234000	Train_loss: 0.4527	Eval_auc: 0.9280	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0472 @30 = 0.0631 @40 = 0.0770 @50 = 0.0893 
+Epoch 14 Global_step 235000	Train_loss: 0.4604	Eval_auc: 0.9291	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0472 @30 = 0.0631 @40 = 0.0770 @50 = 0.0893 
+Epoch 14 Global_step 236000	Train_loss: 0.4612	Eval_auc: 0.9262	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0472 @30 = 0.0631 @40 = 0.0770 @50 = 0.0893 
+Epoch 14 Global_step 237000	Train_loss: 0.4563	Eval_auc: 0.9289	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0472 @30 = 0.0631 @40 = 0.0769 @50 = 0.0893 
+Epoch 14 Global_step 238000	Train_loss: 0.4659	Eval_auc: 0.9256	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0472 @30 = 0.0631 @40 = 0.0769 @50 = 0.0893 
+Epoch 14 Global_step 239000	Train_loss: 0.4682	Eval_auc: 0.9280	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0472 @30 = 0.0631 @40 = 0.0769 @50 = 0.0892 
+Epoch 14 Global_step 240000	Train_loss: 0.4702	Eval_auc: 0.9280	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0472 @30 = 0.0631 @40 = 0.0769 @50 = 0.0892 
+Epoch 14 Global_step 241000	Train_loss: 0.4740	Eval_auc: 0.9297	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0471 @30 = 0.0631 @40 = 0.0769 @50 = 0.0892 
+Epoch 14 Global_step 242000	Train_loss: 0.4758	Eval_auc: 0.9295	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0471 @30 = 0.0631 @40 = 0.0769 @50 = 0.0892 
+Epoch 14 Global_step 243000	Train_loss: 0.4801	Eval_auc: 0.9306	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0471 @30 = 0.0631 @40 = 0.0769 @50 = 0.0892 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-243000
+Epoch 14 Global_step 244000	Train_loss: 0.4739	Eval_auc: 0.9308	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0471 @30 = 0.0630 @40 = 0.0769 @50 = 0.0892 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-244000
+Epoch 14 Global_step 245000	Train_loss: 0.4855	Eval_auc: 0.9312	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0471 @30 = 0.0630 @40 = 0.0769 @50 = 0.0892 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-245000
+Epoch 14 Global_step 246000	Train_loss: 0.4886	Eval_auc: 0.9294	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0276 @20 = 0.0471 @30 = 0.0630 @40 = 0.0769 @50 = 0.0892 
+Epoch 14 Global_step 247000	Train_loss: 0.4860	Eval_auc: 0.9316	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0275 @20 = 0.0471 @30 = 0.0630 @40 = 0.0769 @50 = 0.0892 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-247000
+Epoch 14 Global_step 248000	Train_loss: 0.4946	Eval_auc: 0.9308	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0275 @20 = 0.0471 @30 = 0.0630 @40 = 0.0769 @50 = 0.0892 
+Epoch 14 DONE	Cost time: 4655.79
+Epoch 15 Global_step 249000	Train_loss: 0.4544	Eval_auc: 0.9309	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0275 @20 = 0.0471 @30 = 0.0630 @40 = 0.0768 @50 = 0.0892 
+Epoch 15 Global_step 250000	Train_loss: 0.4348	Eval_auc: 0.9329	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0275 @20 = 0.0471 @30 = 0.0630 @40 = 0.0768 @50 = 0.0892 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-250000
+Epoch 15 Global_step 251000	Train_loss: 0.4382	Eval_auc: 0.9325	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0275 @20 = 0.0471 @30 = 0.0630 @40 = 0.0768 @50 = 0.0892 
+Epoch 15 Global_step 252000	Train_loss: 0.4433	Eval_auc: 0.9281	
+Precision:
+@1 = 0.0037 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0275 @20 = 0.0470 @30 = 0.0630 @40 = 0.0768 @50 = 0.0892 
+Epoch 15 Global_step 253000	Train_loss: 0.4514	Eval_auc: 0.9297	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0275 @20 = 0.0470 @30 = 0.0630 @40 = 0.0768 @50 = 0.0891 
+Epoch 15 Global_step 254000	Train_loss: 0.4524	Eval_auc: 0.9319	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0275 @20 = 0.0470 @30 = 0.0630 @40 = 0.0768 @50 = 0.0892 
+Epoch 15 Global_step 255000	Train_loss: 0.4533	Eval_auc: 0.9311	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0275 @20 = 0.0470 @30 = 0.0629 @40 = 0.0768 @50 = 0.0891 
+Epoch 15 Global_step 256000	Train_loss: 0.4541	Eval_auc: 0.9308	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0275 @20 = 0.0470 @30 = 0.0629 @40 = 0.0768 @50 = 0.0891 
+Epoch 15 Global_step 257000	Train_loss: 0.4639	Eval_auc: 0.9326	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0275 @20 = 0.0470 @30 = 0.0629 @40 = 0.0768 @50 = 0.0891 
+Epoch 15 Global_step 258000	Train_loss: 0.4622	Eval_auc: 0.9323	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0274 @20 = 0.0470 @30 = 0.0629 @40 = 0.0768 @50 = 0.0891 
+Epoch 15 Global_step 259000	Train_loss: 0.4682	Eval_auc: 0.9313	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0274 @20 = 0.0470 @30 = 0.0629 @40 = 0.0768 @50 = 0.0891 
+Epoch 15 Global_step 260000	Train_loss: 0.4760	Eval_auc: 0.9309	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0274 @20 = 0.0470 @30 = 0.0629 @40 = 0.0768 @50 = 0.0891 
+Epoch 15 Global_step 261000	Train_loss: 0.4765	Eval_auc: 0.9306	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0274 @20 = 0.0470 @30 = 0.0629 @40 = 0.0767 @50 = 0.0891 
+Epoch 15 Global_step 262000	Train_loss: 0.4765	Eval_auc: 0.9321	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0274 @20 = 0.0470 @30 = 0.0629 @40 = 0.0767 @50 = 0.0891 
+Epoch 15 Global_step 263000	Train_loss: 0.4816	Eval_auc: 0.9305	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0274 @20 = 0.0470 @30 = 0.0629 @40 = 0.0767 @50 = 0.0891 
+Epoch 15 Global_step 264000	Train_loss: 0.4833	Eval_auc: 0.9334	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0274 @20 = 0.0470 @30 = 0.0629 @40 = 0.0767 @50 = 0.0891 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-264000
+Epoch 15 DONE	Cost time: 4938.65
+Epoch 16 Global_step 265000	Train_loss: 0.4797	Eval_auc: 0.9334	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0274 @20 = 0.0470 @30 = 0.0629 @40 = 0.0767 @50 = 0.0891 
+Epoch 16 Global_step 266000	Train_loss: 0.4149	Eval_auc: 0.9325	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0274 @20 = 0.0470 @30 = 0.0629 @40 = 0.0767 @50 = 0.0891 
+Epoch 16 Global_step 267000	Train_loss: 0.4234	Eval_auc: 0.9309	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0274 @20 = 0.0470 @30 = 0.0629 @40 = 0.0767 @50 = 0.0891 
+Epoch 16 Global_step 268000	Train_loss: 0.4306	Eval_auc: 0.9299	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0274 @20 = 0.0470 @30 = 0.0629 @40 = 0.0767 @50 = 0.0891 
+Epoch 16 Global_step 269000	Train_loss: 0.4292	Eval_auc: 0.9301	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0274 @20 = 0.0469 @30 = 0.0629 @40 = 0.0767 @50 = 0.0891 
+Epoch 16 Global_step 270000	Train_loss: 0.4399	Eval_auc: 0.9298	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0274 @20 = 0.0469 @30 = 0.0629 @40 = 0.0767 @50 = 0.0891 
+Epoch 16 Global_step 271000	Train_loss: 0.4388	Eval_auc: 0.9310	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0274 @20 = 0.0469 @30 = 0.0628 @40 = 0.0767 @50 = 0.0890 
+Epoch 16 Global_step 272000	Train_loss: 0.4520	Eval_auc: 0.9307	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0274 @20 = 0.0469 @30 = 0.0628 @40 = 0.0767 @50 = 0.0890 
+Epoch 16 Global_step 273000	Train_loss: 0.4523	Eval_auc: 0.9299	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0274 @20 = 0.0469 @30 = 0.0628 @40 = 0.0767 @50 = 0.0890 
+Epoch 16 Global_step 274000	Train_loss: 0.4579	Eval_auc: 0.9303	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0274 @20 = 0.0469 @30 = 0.0628 @40 = 0.0767 @50 = 0.0890 
+Epoch 16 Global_step 275000	Train_loss: 0.4571	Eval_auc: 0.9338	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0273 @20 = 0.0469 @30 = 0.0628 @40 = 0.0767 @50 = 0.0890 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-275000
+Epoch 16 Global_step 276000	Train_loss: 0.4618	Eval_auc: 0.9330	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0273 @20 = 0.0469 @30 = 0.0628 @40 = 0.0767 @50 = 0.0890 
+Epoch 16 Global_step 277000	Train_loss: 0.4634	Eval_auc: 0.9334	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0273 @20 = 0.0469 @30 = 0.0628 @40 = 0.0766 @50 = 0.0890 
+Epoch 16 Global_step 278000	Train_loss: 0.4735	Eval_auc: 0.9316	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0273 @20 = 0.0469 @30 = 0.0628 @40 = 0.0766 @50 = 0.0890 
+Epoch 16 Global_step 279000	Train_loss: 0.4772	Eval_auc: 0.9306	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0273 @20 = 0.0469 @30 = 0.0627 @40 = 0.0766 @50 = 0.0890 
+Epoch 16 Global_step 280000	Train_loss: 0.4785	Eval_auc: 0.9318	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0273 @20 = 0.0468 @30 = 0.0627 @40 = 0.0766 @50 = 0.0889 
+Epoch 16 Global_step 281000	Train_loss: 0.4764	Eval_auc: 0.9301	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0273 @20 = 0.0468 @30 = 0.0627 @40 = 0.0766 @50 = 0.0889 
+Epoch 16 DONE	Cost time: 5231.88
+Epoch 17 Global_step 282000	Train_loss: 0.4420	Eval_auc: 0.9317	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0273 @20 = 0.0468 @30 = 0.0627 @40 = 0.0766 @50 = 0.0889 
+Epoch 17 Global_step 283000	Train_loss: 0.4125	Eval_auc: 0.9314	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0273 @20 = 0.0468 @30 = 0.0627 @40 = 0.0765 @50 = 0.0889 
+Epoch 17 Global_step 284000	Train_loss: 0.4181	Eval_auc: 0.9286	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0273 @20 = 0.0468 @30 = 0.0626 @40 = 0.0765 @50 = 0.0889 
+Epoch 17 Global_step 285000	Train_loss: 0.4228	Eval_auc: 0.9303	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0273 @20 = 0.0468 @30 = 0.0626 @40 = 0.0765 @50 = 0.0888 
+Epoch 17 Global_step 286000	Train_loss: 0.4294	Eval_auc: 0.9294	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0273 @20 = 0.0468 @30 = 0.0626 @40 = 0.0765 @50 = 0.0888 
+Epoch 17 Global_step 287000	Train_loss: 0.4344	Eval_auc: 0.9296	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0273 @20 = 0.0468 @30 = 0.0626 @40 = 0.0765 @50 = 0.0888 
+Epoch 17 Global_step 288000	Train_loss: 0.4433	Eval_auc: 0.9289	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0272 @20 = 0.0467 @30 = 0.0626 @40 = 0.0764 @50 = 0.0888 
+Epoch 17 Global_step 289000	Train_loss: 0.4443	Eval_auc: 0.9320	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0272 @20 = 0.0467 @30 = 0.0626 @40 = 0.0764 @50 = 0.0888 
+Epoch 17 Global_step 290000	Train_loss: 0.4489	Eval_auc: 0.9304	
+Precision:
+@1 = 0.0037 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0037 @10 = 0.0272 @20 = 0.0467 @30 = 0.0626 @40 = 0.0764 @50 = 0.0888 
+Epoch 17 Global_step 291000	Train_loss: 0.4468	Eval_auc: 0.9287	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0467 @30 = 0.0625 @40 = 0.0764 @50 = 0.0887 
+Epoch 17 Global_step 292000	Train_loss: 0.4589	Eval_auc: 0.9308	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0467 @30 = 0.0625 @40 = 0.0764 @50 = 0.0887 
+Epoch 17 Global_step 293000	Train_loss: 0.4629	Eval_auc: 0.9288	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0467 @30 = 0.0625 @40 = 0.0764 @50 = 0.0887 
+Epoch 17 Global_step 294000	Train_loss: 0.4721	Eval_auc: 0.9308	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0467 @30 = 0.0625 @40 = 0.0764 @50 = 0.0887 
+Epoch 17 Global_step 295000	Train_loss: 0.4657	Eval_auc: 0.9309	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0467 @30 = 0.0625 @40 = 0.0763 @50 = 0.0887 
+Epoch 17 Global_step 296000	Train_loss: 0.4690	Eval_auc: 0.9313	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0467 @30 = 0.0625 @40 = 0.0763 @50 = 0.0887 
+Epoch 17 Global_step 297000	Train_loss: 0.4755	Eval_auc: 0.9311	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0625 @40 = 0.0763 @50 = 0.0887 
+Epoch 17 Global_step 298000	Train_loss: 0.4790	Eval_auc: 0.9331	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0625 @40 = 0.0763 @50 = 0.0887 
+Epoch 17 DONE	Cost time: 5525.28
+Epoch 18 Global_step 299000	Train_loss: 0.4068	Eval_auc: 0.9301	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0625 @40 = 0.0763 @50 = 0.0887 
+Epoch 18 Global_step 300000	Train_loss: 0.4115	Eval_auc: 0.9303	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0624 @40 = 0.0763 @50 = 0.0887 
+Epoch 18 Global_step 301000	Train_loss: 0.4205	Eval_auc: 0.9287	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0624 @40 = 0.0763 @50 = 0.0886 
+Epoch 18 Global_step 302000	Train_loss: 0.4243	Eval_auc: 0.9289	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0624 @40 = 0.0763 @50 = 0.0886 
+Epoch 18 Global_step 303000	Train_loss: 0.4312	Eval_auc: 0.9295	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0624 @40 = 0.0763 @50 = 0.0886 
+Epoch 18 Global_step 304000	Train_loss: 0.4317	Eval_auc: 0.9305	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0624 @40 = 0.0763 @50 = 0.0886 
+Epoch 18 Global_step 305000	Train_loss: 0.4372	Eval_auc: 0.9317	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0624 @40 = 0.0762 @50 = 0.0886 
+Epoch 18 Global_step 306000	Train_loss: 0.4438	Eval_auc: 0.9301	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0624 @40 = 0.0762 @50 = 0.0886 
+Epoch 18 Global_step 307000	Train_loss: 0.4495	Eval_auc: 0.9283	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0624 @40 = 0.0762 @50 = 0.0886 
+Epoch 18 Global_step 308000	Train_loss: 0.4487	Eval_auc: 0.9298	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0624 @40 = 0.0762 @50 = 0.0886 
+Epoch 18 Global_step 309000	Train_loss: 0.4557	Eval_auc: 0.9299	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0624 @40 = 0.0762 @50 = 0.0886 
+Epoch 18 Global_step 310000	Train_loss: 0.4606	Eval_auc: 0.9311	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0624 @40 = 0.0762 @50 = 0.0886 
+Epoch 18 Global_step 311000	Train_loss: 0.4662	Eval_auc: 0.9315	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0624 @40 = 0.0762 @50 = 0.0886 
+Epoch 18 Global_step 312000	Train_loss: 0.4724	Eval_auc: 0.9293	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0624 @40 = 0.0762 @50 = 0.0885 
+Epoch 18 Global_step 313000	Train_loss: 0.4744	Eval_auc: 0.9299	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0624 @40 = 0.0762 @50 = 0.0885 
+Epoch 18 Global_step 314000	Train_loss: 0.4764	Eval_auc: 0.9309	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0624 @40 = 0.0762 @50 = 0.0885 
+Epoch 18 DONE	Cost time: 5811.82
+Epoch 19 Global_step 315000	Train_loss: 0.4467	Eval_auc: 0.9317	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0466 @30 = 0.0624 @40 = 0.0762 @50 = 0.0885 
+Epoch 19 Global_step 316000	Train_loss: 0.4010	Eval_auc: 0.9301	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0465 @30 = 0.0623 @40 = 0.0762 @50 = 0.0885 
+Epoch 19 Global_step 317000	Train_loss: 0.4099	Eval_auc: 0.9294	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0465 @30 = 0.0623 @40 = 0.0761 @50 = 0.0885 
+Epoch 19 Global_step 318000	Train_loss: 0.4149	Eval_auc: 0.9297	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0465 @30 = 0.0623 @40 = 0.0761 @50 = 0.0885 
+Epoch 19 Global_step 319000	Train_loss: 0.4157	Eval_auc: 0.9308	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0465 @30 = 0.0623 @40 = 0.0761 @50 = 0.0885 
+Epoch 19 Global_step 320000	Train_loss: 0.4268	Eval_auc: 0.9299	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0272 @20 = 0.0465 @30 = 0.0623 @40 = 0.0761 @50 = 0.0885 
+Epoch 19 Global_step 321000	Train_loss: 0.4298	Eval_auc: 0.9280	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0271 @20 = 0.0465 @30 = 0.0623 @40 = 0.0761 @50 = 0.0885 
+Epoch 19 Global_step 322000	Train_loss: 0.4363	Eval_auc: 0.9308	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0271 @20 = 0.0465 @30 = 0.0623 @40 = 0.0761 @50 = 0.0885 
+Epoch 19 Global_step 323000	Train_loss: 0.4405	Eval_auc: 0.9297	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0271 @20 = 0.0465 @30 = 0.0623 @40 = 0.0761 @50 = 0.0885 
+Epoch 19 Global_step 324000	Train_loss: 0.4476	Eval_auc: 0.9298	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0271 @20 = 0.0465 @30 = 0.0623 @40 = 0.0761 @50 = 0.0885 
+Epoch 19 Global_step 325000	Train_loss: 0.4585	Eval_auc: 0.9306	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0271 @20 = 0.0465 @30 = 0.0623 @40 = 0.0761 @50 = 0.0884 
+Epoch 19 Global_step 326000	Train_loss: 0.4554	Eval_auc: 0.9300	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0271 @20 = 0.0465 @30 = 0.0623 @40 = 0.0761 @50 = 0.0884 
+Epoch 19 Global_step 327000	Train_loss: 0.4588	Eval_auc: 0.9295	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0271 @20 = 0.0465 @30 = 0.0623 @40 = 0.0761 @50 = 0.0884 
+Epoch 19 Global_step 328000	Train_loss: 0.4667	Eval_auc: 0.9296	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0271 @20 = 0.0465 @30 = 0.0623 @40 = 0.0761 @50 = 0.0884 
+Epoch 19 Global_step 329000	Train_loss: 0.4683	Eval_auc: 0.9300	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0271 @20 = 0.0464 @30 = 0.0622 @40 = 0.0760 @50 = 0.0884 
+Epoch 19 Global_step 330000	Train_loss: 0.4748	Eval_auc: 0.9300	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0271 @20 = 0.0464 @30 = 0.0622 @40 = 0.0760 @50 = 0.0884 
+Epoch 19 Global_step 331000	Train_loss: 0.4874	Eval_auc: 0.9335	
+Precision:
+@1 = 0.0036 @10 = 0.0027 @20 = 0.0023 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Recall:
+@1 = 0.0036 @10 = 0.0271 @20 = 0.0464 @30 = 0.0622 @40 = 0.0760 @50 = 0.0884 
+Epoch 19 DONE	Cost time: 6108.67
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/CDs_and_Vinyl/TLSAN-331140
+Best test_auc: 0.9337855163571694
+Best precision:
+@1 = 0.0046 @10 = 0.0028 @20 = 0.0024 @30 = 0.0021 @40 = 0.0019 @50 = 0.0018 
+Best recall:
+@1 = 0.0046 @10 = 0.0282 @20 = 0.0478 @30 = 0.0634 @40 = 0.0772 @50 = 0.0894 
+Finished

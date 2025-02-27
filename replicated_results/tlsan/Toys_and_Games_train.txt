@@ -1,0 +1,235 @@
+Loading data..
+{
+    "Ls": 10,
+    "cateid_embedding_size": 32,
+    "cuda_visible_devices": "3",
+    "display_freq": 100,
+    "dropout": 0.0,
+    "eval_freq": 1000,
+    "from_scratch": true,
+    "h": false,
+    "help": false,
+    "helpfull": false,
+    "helpshort": false,
+    "hidden_units": 64,
+    "itemid_embedding_size": 32,
+    "learning_rate": 1.0,
+    "max_epochs": 20,
+    "max_gradient_norm": 5.0,
+    "model_dir": "/dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Toys_and_Games",
+    "num_blocks": 1,
+    "num_heads": 8,
+    "optimizer": "sgd",
+    "per_process_gpu_memory_fraction": 0.0,
+    "regulation_rate": 5e-05,
+    "test_batch_size": 128,
+    "train_batch_size": 32,
+    "userid_embedding_size": 32,
+    "user_count": 2677,
+    "item_count": 2474,
+    "cate_count": 221
+}
+All global variables:
+	 <tf.Variable 'gamma_parameter:0' shape=() dtype=float32_ref> trainable
+	 <tf.Variable 'item_emb:0' shape=(2474, 32) dtype=float32_ref> trainable
+	 <tf.Variable 'item_b:0' shape=(2474,) dtype=float32_ref> trainable
+	 <tf.Variable 'user_emb:0' shape=(2677, 32) dtype=float32_ref> trainable
+	 <tf.Variable 'usert_emb:0' shape=(2677, 10) dtype=float32_ref> trainable
+	 <tf.Variable 'cate_emb:0' shape=(221, 32) dtype=float32_ref> trainable
+	 <tf.Variable 'all/long_term/num_blocks0_0/long_term_layer/feature_wise_attention1/bn_dense_map1/linear_map/W:0' shape=(8, 8) dtype=float32_ref> trainable
+	 <tf.Variable 'all/long_term/num_blocks0_0/long_term_layer/feature_wise_attention1/bn_dense_map1/linear_map/bias:0' shape=(8,) dtype=float32_ref> trainable
+	 <tf.Variable 'all/long_term/num_blocks0_0/long_term_layer/feature_wise_attention1/bn_dense_map2/linear_map/W:0' shape=(8, 8) dtype=float32_ref> trainable
+	 <tf.Variable 'all/long_term/num_blocks0_0/long_term_layer/feature_wise_attention1/bn_dense_map2/linear_map/bias:0' shape=(8,) dtype=float32_ref> trainable
+	 <tf.Variable 'all/long_term/num_blocks0_0/dense/kernel:0' shape=(64, 64) dtype=float32_ref> trainable
+	 <tf.Variable 'all/long_term/num_blocks0_0/dense/bias:0' shape=(64,) dtype=float32_ref> trainable
+	 <tf.Variable 'all/short_term/num_blocks1_0/short_term_layer/feature_wise_attention2/bn_dense_map1/linear_map/W:0' shape=(8, 8) dtype=float32_ref> trainable
+	 <tf.Variable 'all/short_term/num_blocks1_0/short_term_layer/feature_wise_attention2/bn_dense_map1/linear_map/bias:0' shape=(8,) dtype=float32_ref> trainable
+	 <tf.Variable 'all/short_term/num_blocks1_0/short_term_layer/feature_wise_attention2/bn_dense_map2/linear_map/W:0' shape=(8, 8) dtype=float32_ref> trainable
+	 <tf.Variable 'all/short_term/num_blocks1_0/short_term_layer/feature_wise_attention2/bn_dense_map2/linear_map/bias:0' shape=(8,) dtype=float32_ref> trainable
+	 <tf.Variable 'global_step:0' shape=() dtype=int32_ref>
+	 <tf.Variable 'global_epoch_step:0' shape=() dtype=int32_ref>
+Created new model parameters..
+Init finish.	Cost time: 0.98s
+Init AUC: 0.8106
+Init precision:
+@1 = 0.0441 @10 = 0.0105 @20 = 0.0072 @30 = 0.0062 @40 = 0.0056 @50 = 0.0051 
+Init recall:
+@1 = 0.0441 @10 = 0.1050 @20 = 0.1446 @30 = 0.1853 @40 = 0.2260 @50 = 0.2574 
+Training..	max_epochs: 20	epoch_size: 1357
+Epoch 0 Global_step 1000	Train_loss: 1.3055	Eval_auc: 0.7613	
+Precision:
+@1 = 0.0252 @10 = 0.0069 @20 = 0.0050 @30 = 0.0043 @40 = 0.0039 @50 = 0.0036 
+Recall:
+@1 = 0.0252 @10 = 0.0687 @20 = 0.1003 @30 = 0.1278 @40 = 0.1567 @50 = 0.1797 
+Epoch 0 DONE	Cost time: 4.90
+Epoch 1 Global_step 2000	Train_loss: 1.2142	Eval_auc: 0.7882	
+Precision:
+@1 = 0.0179 @10 = 0.0058 @20 = 0.0044 @30 = 0.0038 @40 = 0.0035 @50 = 0.0032 
+Recall:
+@1 = 0.0179 @10 = 0.0575 @20 = 0.0875 @30 = 0.1133 @40 = 0.1390 @50 = 0.1620 
+Epoch 1 DONE	Cost time: 9.31
+Epoch 2 Global_step 3000	Train_loss: 1.1245	Eval_auc: 0.7818	
+Precision:
+@1 = 0.0141 @10 = 0.0053 @20 = 0.0042 @30 = 0.0037 @40 = 0.0034 @50 = 0.0032 
+Recall:
+@1 = 0.0141 @10 = 0.0529 @20 = 0.0830 @30 = 0.1101 @40 = 0.1359 @50 = 0.1584 
+Epoch 2 Global_step 4000	Train_loss: 1.0616	Eval_auc: 0.8084	
+Precision:
+@1 = 0.0126 @10 = 0.0053 @20 = 0.0042 @30 = 0.0037 @40 = 0.0034 @50 = 0.0032 
+Recall:
+@1 = 0.0126 @10 = 0.0530 @20 = 0.0839 @30 = 0.1123 @40 = 0.1374 @50 = 0.1599 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Toys_and_Games/TLSAN-4000
+Epoch 2 DONE	Cost time: 14.45
+Epoch 3 Global_step 5000	Train_loss: 0.9969	Eval_auc: 0.8252	
+Precision:
+@1 = 0.0118 @10 = 0.0053 @20 = 0.0042 @30 = 0.0038 @40 = 0.0035 @50 = 0.0032 
+Recall:
+@1 = 0.0118 @10 = 0.0532 @20 = 0.0850 @30 = 0.1139 @40 = 0.1387 @50 = 0.1616 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Toys_and_Games/TLSAN-5000
+Epoch 3 DONE	Cost time: 18.92
+Epoch 4 Global_step 6000	Train_loss: 0.9451	Eval_auc: 0.8439	
+Precision:
+@1 = 0.0110 @10 = 0.0054 @20 = 0.0043 @30 = 0.0039 @40 = 0.0035 @50 = 0.0033 
+Recall:
+@1 = 0.0110 @10 = 0.0535 @20 = 0.0862 @30 = 0.1157 @40 = 0.1418 @50 = 0.1662 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Toys_and_Games/TLSAN-6000
+Epoch 4 DONE	Cost time: 23.38
+Epoch 5 Global_step 7000	Train_loss: 0.8974	Eval_auc: 0.8536	
+Precision:
+@1 = 0.0109 @10 = 0.0056 @20 = 0.0046 @30 = 0.0041 @40 = 0.0037 @50 = 0.0035 
+Recall:
+@1 = 0.0109 @10 = 0.0564 @20 = 0.0912 @30 = 0.1221 @40 = 0.1498 @50 = 0.1752 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Toys_and_Games/TLSAN-7000
+Epoch 5 Global_step 8000	Train_loss: 0.8418	Eval_auc: 0.8603	
+Precision:
+@1 = 0.0108 @10 = 0.0059 @20 = 0.0048 @30 = 0.0043 @40 = 0.0039 @50 = 0.0036 
+Recall:
+@1 = 0.0108 @10 = 0.0585 @20 = 0.0957 @30 = 0.1277 @40 = 0.1562 @50 = 0.1818 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Toys_and_Games/TLSAN-8000
+Epoch 5 DONE	Cost time: 28.93
+Epoch 6 Global_step 9000	Train_loss: 0.7970	Eval_auc: 0.8610	
+Precision:
+@1 = 0.0121 @10 = 0.0062 @20 = 0.0050 @30 = 0.0045 @40 = 0.0041 @50 = 0.0038 
+Recall:
+@1 = 0.0121 @10 = 0.0620 @20 = 0.1008 @30 = 0.1340 @40 = 0.1632 @50 = 0.1896 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Toys_and_Games/TLSAN-9000
+Epoch 6 DONE	Cost time: 33.45
+Epoch 7 Global_step 10000	Train_loss: 0.7497	Eval_auc: 0.8883	
+Precision:
+@1 = 0.0126 @10 = 0.0066 @20 = 0.0053 @30 = 0.0047 @40 = 0.0043 @50 = 0.0040 
+Recall:
+@1 = 0.0126 @10 = 0.0658 @20 = 0.1069 @30 = 0.1415 @40 = 0.1718 @50 = 0.1995 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Toys_and_Games/TLSAN-10000
+Epoch 7 DONE	Cost time: 38.09
+Epoch 8 Global_step 11000	Train_loss: 0.7106	Eval_auc: 0.9003	
+Precision:
+@1 = 0.0134 @10 = 0.0070 @20 = 0.0057 @30 = 0.0050 @40 = 0.0045 @50 = 0.0042 
+Recall:
+@1 = 0.0134 @10 = 0.0700 @20 = 0.1142 @30 = 0.1504 @40 = 0.1819 @50 = 0.2108 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Toys_and_Games/TLSAN-11000
+Epoch 8 Global_step 12000	Train_loss: 0.6486	Eval_auc: 0.9085	
+Precision:
+@1 = 0.0151 @10 = 0.0077 @20 = 0.0062 @30 = 0.0054 @40 = 0.0048 @50 = 0.0045 
+Recall:
+@1 = 0.0151 @10 = 0.0770 @20 = 0.1239 @30 = 0.1611 @40 = 0.1931 @50 = 0.2226 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Toys_and_Games/TLSAN-12000
+Epoch 8 DONE	Cost time: 43.24
+Epoch 9 Global_step 13000	Train_loss: 0.5983	Eval_auc: 0.9126	
+Precision:
+@1 = 0.0160 @10 = 0.0082 @20 = 0.0066 @30 = 0.0057 @40 = 0.0051 @50 = 0.0047 
+Recall:
+@1 = 0.0160 @10 = 0.0817 @20 = 0.1310 @30 = 0.1697 @40 = 0.2026 @50 = 0.2330 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Toys_and_Games/TLSAN-13000
+Epoch 9 DONE	Cost time: 47.64
+Epoch 10 Global_step 14000	Train_loss: 0.5618	Eval_auc: 0.9156	
+Precision:
+@1 = 0.0165 @10 = 0.0086 @20 = 0.0069 @30 = 0.0059 @40 = 0.0053 @50 = 0.0048 
+Recall:
+@1 = 0.0165 @10 = 0.0864 @20 = 0.1377 @30 = 0.1772 @40 = 0.2108 @50 = 0.2416 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Toys_and_Games/TLSAN-14000
+Epoch 10 DONE	Cost time: 52.34
+Epoch 11 Global_step 15000	Train_loss: 0.5468	Eval_auc: 0.9174	
+Precision:
+@1 = 0.0174 @10 = 0.0091 @20 = 0.0072 @30 = 0.0061 @40 = 0.0055 @50 = 0.0050 
+Recall:
+@1 = 0.0174 @10 = 0.0909 @20 = 0.1435 @30 = 0.1843 @40 = 0.2184 @50 = 0.2499 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Toys_and_Games/TLSAN-15000
+Epoch 11 Global_step 16000	Train_loss: 0.4885	Eval_auc: 0.9212	
+Precision:
+@1 = 0.0184 @10 = 0.0096 @20 = 0.0075 @30 = 0.0064 @40 = 0.0057 @50 = 0.0052 
+Recall:
+@1 = 0.0184 @10 = 0.0957 @20 = 0.1506 @30 = 0.1927 @40 = 0.2273 @50 = 0.2592 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Toys_and_Games/TLSAN-16000
+Epoch 11 DONE	Cost time: 57.44
+Epoch 12 Global_step 17000	Train_loss: 0.4871	Eval_auc: 0.9178	
+Precision:
+@1 = 0.0186 @10 = 0.0099 @20 = 0.0077 @30 = 0.0066 @40 = 0.0058 @50 = 0.0053 
+Recall:
+@1 = 0.0186 @10 = 0.0991 @20 = 0.1548 @30 = 0.1976 @40 = 0.2326 @50 = 0.2648 
+Epoch 12 DONE	Cost time: 62.01
+Epoch 13 Global_step 18000	Train_loss: 0.5162	Eval_auc: 0.9171	
+Precision:
+@1 = 0.0188 @10 = 0.0102 @20 = 0.0079 @30 = 0.0068 @40 = 0.0060 @50 = 0.0054 
+Recall:
+@1 = 0.0188 @10 = 0.1017 @20 = 0.1587 @30 = 0.2026 @40 = 0.2384 @50 = 0.2715 
+Epoch 13 Global_step 19000	Train_loss: 0.5102	Eval_auc: 0.9193	
+Precision:
+@1 = 0.0192 @10 = 0.0105 @20 = 0.0082 @30 = 0.0070 @40 = 0.0061 @50 = 0.0056 
+Recall:
+@1 = 0.0192 @10 = 0.1055 @20 = 0.1636 @30 = 0.2086 @40 = 0.2449 @50 = 0.2780 
+Epoch 13 DONE	Cost time: 66.86
+Epoch 14 Global_step 20000	Train_loss: 0.4784	Eval_auc: 0.9182	
+Precision:
+@1 = 0.0198 @10 = 0.0109 @20 = 0.0084 @30 = 0.0071 @40 = 0.0063 @50 = 0.0057 
+Recall:
+@1 = 0.0198 @10 = 0.1089 @20 = 0.1680 @30 = 0.2134 @40 = 0.2503 @50 = 0.2834 
+Epoch 14 DONE	Cost time: 71.15
+Epoch 15 Global_step 21000	Train_loss: 0.5124	Eval_auc: 0.9197	
+Precision:
+@1 = 0.0206 @10 = 0.0112 @20 = 0.0086 @30 = 0.0073 @40 = 0.0064 @50 = 0.0058 
+Recall:
+@1 = 0.0206 @10 = 0.1119 @20 = 0.1722 @30 = 0.2179 @40 = 0.2554 @50 = 0.2888 
+Epoch 15 DONE	Cost time: 75.74
+Epoch 16 Global_step 22000	Train_loss: 0.4911	Eval_auc: 0.9178	
+Precision:
+@1 = 0.0203 @10 = 0.0113 @20 = 0.0087 @30 = 0.0074 @40 = 0.0065 @50 = 0.0059 
+Recall:
+@1 = 0.0203 @10 = 0.1133 @20 = 0.1748 @30 = 0.2213 @40 = 0.2592 @50 = 0.2929 
+Epoch 16 Global_step 23000	Train_loss: 0.4982	Eval_auc: 0.9238	
+Precision:
+@1 = 0.0205 @10 = 0.0115 @20 = 0.0089 @30 = 0.0075 @40 = 0.0066 @50 = 0.0059 
+Recall:
+@1 = 0.0205 @10 = 0.1148 @20 = 0.1771 @30 = 0.2242 @40 = 0.2629 @50 = 0.2969 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Toys_and_Games/TLSAN-23000
+Epoch 16 DONE	Cost time: 80.71
+Epoch 17 Global_step 24000	Train_loss: 0.5002	Eval_auc: 0.9182	
+Precision:
+@1 = 0.0210 @10 = 0.0117 @20 = 0.0090 @30 = 0.0076 @40 = 0.0066 @50 = 0.0060 
+Recall:
+@1 = 0.0210 @10 = 0.1168 @20 = 0.1796 @30 = 0.2270 @40 = 0.2657 @50 = 0.3001 
+Epoch 17 DONE	Cost time: 85.25
+Epoch 18 Global_step 25000	Train_loss: 0.4973	Eval_auc: 0.9189	
+Precision:
+@1 = 0.0214 @10 = 0.0119 @20 = 0.0091 @30 = 0.0077 @40 = 0.0067 @50 = 0.0061 
+Recall:
+@1 = 0.0214 @10 = 0.1188 @20 = 0.1824 @30 = 0.2300 @40 = 0.2691 @50 = 0.3039 
+Epoch 18 DONE	Cost time: 89.55
+Epoch 19 Global_step 26000	Train_loss: 0.5297	Eval_auc: 0.9242	
+Precision:
+@1 = 0.0220 @10 = 0.0121 @20 = 0.0093 @30 = 0.0078 @40 = 0.0068 @50 = 0.0061 
+Recall:
+@1 = 0.0220 @10 = 0.1209 @20 = 0.1851 @30 = 0.2329 @40 = 0.2723 @50 = 0.3073 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Toys_and_Games/TLSAN-26000
+Epoch 19 Global_step 27000	Train_loss: 0.5027	Eval_auc: 0.9227	
+Precision:
+@1 = 0.0229 @10 = 0.0124 @20 = 0.0094 @30 = 0.0079 @40 = 0.0069 @50 = 0.0062 
+Recall:
+@1 = 0.0229 @10 = 0.1239 @20 = 0.1890 @30 = 0.2373 @40 = 0.2771 @50 = 0.3121 
+Epoch 19 DONE	Cost time: 94.52
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Toys_and_Games/TLSAN-27160
+Best test_auc: 0.9241688457228241
+Best precision:
+@1 = 0.0229 @10 = 0.0124 @20 = 0.0094 @30 = 0.0079 @40 = 0.0069 @50 = 0.0062 
+Best recall:
+@1 = 0.0229 @10 = 0.1239 @20 = 0.1890 @30 = 0.2373 @40 = 0.2771 @50 = 0.3121 
+Finished

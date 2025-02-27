@@ -1,0 +1,120 @@
+Loading data..
+{
+    "Ls": 10,
+    "cateid_embedding_size": 32,
+    "cuda_visible_devices": "3",
+    "display_freq": 100,
+    "dropout": 0.0,
+    "eval_freq": 1000,
+    "from_scratch": true,
+    "h": false,
+    "help": false,
+    "helpfull": false,
+    "helpshort": false,
+    "hidden_units": 64,
+    "itemid_embedding_size": 32,
+    "learning_rate": 1.0,
+    "max_epochs": 20,
+    "max_gradient_norm": 5.0,
+    "model_dir": "/dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Clothing_Shoes_and_Jewelry",
+    "num_blocks": 1,
+    "num_heads": 8,
+    "optimizer": "sgd",
+    "per_process_gpu_memory_fraction": 0.0,
+    "regulation_rate": 5e-05,
+    "test_batch_size": 128,
+    "train_batch_size": 32,
+    "userid_embedding_size": 32,
+    "user_count": 2010,
+    "item_count": 1723,
+    "cate_count": 226
+}
+All global variables:
+	 <tf.Variable 'gamma_parameter:0' shape=() dtype=float32_ref> trainable
+	 <tf.Variable 'item_emb:0' shape=(1723, 32) dtype=float32_ref> trainable
+	 <tf.Variable 'item_b:0' shape=(1723,) dtype=float32_ref> trainable
+	 <tf.Variable 'user_emb:0' shape=(2010, 32) dtype=float32_ref> trainable
+	 <tf.Variable 'usert_emb:0' shape=(2010, 10) dtype=float32_ref> trainable
+	 <tf.Variable 'cate_emb:0' shape=(226, 32) dtype=float32_ref> trainable
+	 <tf.Variable 'all/long_term/num_blocks0_0/long_term_layer/feature_wise_attention1/bn_dense_map1/linear_map/W:0' shape=(8, 8) dtype=float32_ref> trainable
+	 <tf.Variable 'all/long_term/num_blocks0_0/long_term_layer/feature_wise_attention1/bn_dense_map1/linear_map/bias:0' shape=(8,) dtype=float32_ref> trainable
+	 <tf.Variable 'all/long_term/num_blocks0_0/long_term_layer/feature_wise_attention1/bn_dense_map2/linear_map/W:0' shape=(8, 8) dtype=float32_ref> trainable
+	 <tf.Variable 'all/long_term/num_blocks0_0/long_term_layer/feature_wise_attention1/bn_dense_map2/linear_map/bias:0' shape=(8,) dtype=float32_ref> trainable
+	 <tf.Variable 'all/long_term/num_blocks0_0/dense/kernel:0' shape=(64, 64) dtype=float32_ref> trainable
+	 <tf.Variable 'all/long_term/num_blocks0_0/dense/bias:0' shape=(64,) dtype=float32_ref> trainable
+	 <tf.Variable 'all/short_term/num_blocks1_0/short_term_layer/feature_wise_attention2/bn_dense_map1/linear_map/W:0' shape=(8, 8) dtype=float32_ref> trainable
+	 <tf.Variable 'all/short_term/num_blocks1_0/short_term_layer/feature_wise_attention2/bn_dense_map1/linear_map/bias:0' shape=(8,) dtype=float32_ref> trainable
+	 <tf.Variable 'all/short_term/num_blocks1_0/short_term_layer/feature_wise_attention2/bn_dense_map2/linear_map/W:0' shape=(8, 8) dtype=float32_ref> trainable
+	 <tf.Variable 'all/short_term/num_blocks1_0/short_term_layer/feature_wise_attention2/bn_dense_map2/linear_map/bias:0' shape=(8,) dtype=float32_ref> trainable
+	 <tf.Variable 'global_step:0' shape=() dtype=int32_ref>
+	 <tf.Variable 'global_epoch_step:0' shape=() dtype=int32_ref>
+Created new model parameters..
+Init finish.	Cost time: 1.71s
+Init AUC: 0.8687
+Init precision:
+@1 = 0.0438 @10 = 0.0179 @20 = 0.0143 @30 = 0.0130 @40 = 0.0117 @50 = 0.0100 
+Init recall:
+@1 = 0.0438 @10 = 0.1791 @20 = 0.2866 @30 = 0.3886 @40 = 0.4692 @50 = 0.4975 
+Training..	max_epochs: 20	epoch_size: 309
+Epoch 0 DONE	Cost time: 1.16
+Epoch 1 DONE	Cost time: 2.13
+Epoch 2 DONE	Cost time: 2.98
+Epoch 3 Global_step 1000	Train_loss: 1.1222	Eval_auc: 0.8731	
+Precision:
+@1 = 0.0358 @10 = 0.0145 @20 = 0.0116 @30 = 0.0103 @40 = 0.0092 @50 = 0.0080 
+Recall:
+@1 = 0.0358 @10 = 0.1450 @20 = 0.2321 @30 = 0.3082 @40 = 0.3697 @50 = 0.4020 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Clothing_Shoes_and_Jewelry/TLSAN-1000
+Epoch 3 DONE	Cost time: 4.27
+Epoch 4 DONE	Cost time: 5.11
+Epoch 5 DONE	Cost time: 5.95
+Epoch 6 Global_step 2000	Train_loss: 1.0031	Eval_auc: 0.9010	
+Precision:
+@1 = 0.0328 @10 = 0.0148 @20 = 0.0116 @30 = 0.0103 @40 = 0.0092 @50 = 0.0081 
+Recall:
+@1 = 0.0328 @10 = 0.1478 @20 = 0.2323 @30 = 0.3083 @40 = 0.3670 @50 = 0.4028 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Clothing_Shoes_and_Jewelry/TLSAN-2000
+Epoch 6 DONE	Cost time: 7.24
+Epoch 7 DONE	Cost time: 8.16
+Epoch 8 DONE	Cost time: 9.00
+Epoch 9 Global_step 3000	Train_loss: 0.8987	Eval_auc: 0.9179	
+Precision:
+@1 = 0.0316 @10 = 0.0153 @20 = 0.0121 @30 = 0.0105 @40 = 0.0093 @50 = 0.0082 
+Recall:
+@1 = 0.0316 @10 = 0.1529 @20 = 0.2415 @30 = 0.3159 @40 = 0.3733 @50 = 0.4122 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Clothing_Shoes_and_Jewelry/TLSAN-3000
+Epoch 9 DONE	Cost time: 10.26
+Epoch 10 DONE	Cost time: 11.09
+Epoch 11 DONE	Cost time: 11.93
+Epoch 12 Global_step 4000	Train_loss: 0.7787	Eval_auc: 0.9303	
+Precision:
+@1 = 0.0315 @10 = 0.0160 @20 = 0.0126 @30 = 0.0109 @40 = 0.0096 @50 = 0.0084 
+Recall:
+@1 = 0.0315 @10 = 0.1603 @20 = 0.2526 @30 = 0.3265 @40 = 0.3831 @50 = 0.4224 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Clothing_Shoes_and_Jewelry/TLSAN-4000
+Epoch 12 DONE	Cost time: 13.18
+Epoch 13 DONE	Cost time: 14.10
+Epoch 14 DONE	Cost time: 14.93
+Epoch 15 DONE	Cost time: 15.79
+Epoch 16 Global_step 5000	Train_loss: 0.6365	Eval_auc: 0.9313	
+Precision:
+@1 = 0.0312 @10 = 0.0168 @20 = 0.0133 @30 = 0.0113 @40 = 0.0099 @50 = 0.0087 
+Recall:
+@1 = 0.0312 @10 = 0.1683 @20 = 0.2651 @30 = 0.3381 @40 = 0.3958 @50 = 0.4356 
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Clothing_Shoes_and_Jewelry/TLSAN-5000
+Epoch 16 DONE	Cost time: 17.05
+Epoch 17 DONE	Cost time: 17.88
+Epoch 18 DONE	Cost time: 18.72
+Epoch 19 Global_step 6000	Train_loss: 0.5283	Eval_auc: 0.9204	
+Precision:
+@1 = 0.0309 @10 = 0.0175 @20 = 0.0137 @30 = 0.0116 @40 = 0.0101 @50 = 0.0089 
+Recall:
+@1 = 0.0309 @10 = 0.1753 @20 = 0.2739 @30 = 0.3473 @40 = 0.4038 @50 = 0.4440 
+Epoch 19 DONE	Cost time: 19.93
+model saved at /dt/shabtaia/dt-sicpa/noam/TLSAN/TLSAN/restored_save_path/Clothing_Shoes_and_Jewelry/TLSAN-6180
+Best test_auc: 0.9313432835820895
+Best precision:
+@1 = 0.0000 @10 = 0.0000 @20 = 0.0000 @30 = 0.0000 @40 = 0.0000 @50 = 0.0000 
+Best recall:
+@1 = 0.0000 @10 = 0.0000 @20 = 0.0000 @30 = 0.0000 @40 = 0.0000 @50 = 0.0000 
+Finished
